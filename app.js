@@ -7,11 +7,14 @@ const $$ = (sel) => Array.from(document.querySelectorAll(sel));
 
 const state = {
   recipes: [],
+  ideas: [],
   ingredients: [],
   tags: [],
   query: '',
   activeTags: new Set(),
   dairyFreeOnly: true,
+  // 'all' | 'recipes' | 'ideas'
+  contentType: 'all',
   openIds: new Set(),
 };
 
@@ -22,6 +25,7 @@ const els = {
   results: $('#results'),
   empty: $('#empty'),
   stats: $('#stats'),
+  pickBtn: $('#pickForMe'),
 };
 
 // --- Load data -----------------------------------------------------------
@@ -31,9 +35,10 @@ async function load() {
     const res = await fetch('data/recipes.json', { cache: 'no-cache' });
     const data = await res.json();
     state.recipes = data.recipes;
+    state.ideas = data.ideas || [];
     state.ingredients = data.ingredients;
     state.tags = data.tags;
-    els.stats.textContent = `${data.recipeCount} recipes · ${data.ingredientCount} ingredients · updated ${new Date(data.generated).toLocaleDateString()}`;
+    els.stats.textContent = `${data.recipeCount} recipes · ${data.ideaCount || 0} ideas · updated ${new Date(data.generated).toLocaleDateString()}`;
     renderTagChips();
     restoreFromHash();
     render();
@@ -76,37 +81,43 @@ function renderTagChips() {
 
 // --- Filtering -----------------------------------------------------------
 
-// Match a recipe against the current search query (ignoring filters).
-function matchesQuery(r, q) {
+// Match an item (recipe or idea) against the current search query.
+function matchesQuery(item, q) {
   if (!q) return true;
   const hay = [
-    r.name,
-    r.primaryIngredient || '',
-    (r.secondaryIngredients || []).join(' '),
-    (r.searchTerms || []).join(' '),
-    r.ingredients || '',
+    item.name,
+    item.primaryIngredient || '',
+    (item.secondaryIngredients || []).join(' '),
+    (item.searchTerms || []).join(' '),
+    item.ingredients || '',
+    item.group || '',
   ]
     .join(' ')
     .toLowerCase();
   return hay.includes(q);
 }
 
-// Match against active filters (dairy + tags).
-function matchesFilters(r) {
-  if (state.dairyFreeOnly && r.tags.includes('contains-dairy')) return false;
-  for (const t of state.activeTags) if (!r.tags.includes(t)) return false;
+function matchesFilters(item) {
+  if (state.dairyFreeOnly && item.tags.includes('contains-dairy')) return false;
+  for (const t of state.activeTags) if (!item.tags.includes(t)) return false;
   return true;
 }
 
-function filterRecipes() {
-  const q = state.query.trim().toLowerCase();
-  return state.recipes.filter((r) => matchesQuery(r, q) && matchesFilters(r));
+function corpus() {
+  if (state.contentType === 'recipes') return state.recipes;
+  if (state.contentType === 'ideas') return state.ideas;
+  // 'all' — recipes first, then ideas
+  return [...state.recipes, ...state.ideas];
 }
 
-// Count recipes that match the search query but are hidden by active filters.
+function filterItems() {
+  const q = state.query.trim().toLowerCase();
+  return corpus().filter((item) => matchesQuery(item, q) && matchesFilters(item));
+}
+
 function countHiddenByFilters() {
   const q = state.query.trim().toLowerCase();
-  return state.recipes.filter((r) => matchesQuery(r, q) && !matchesFilters(r)).length;
+  return corpus().filter((item) => matchesQuery(item, q) && !matchesFilters(item)).length;
 }
 
 // --- Rendering -----------------------------------------------------------
@@ -134,6 +145,25 @@ function escapeHtml(s) {
     .replace(/'/g, '&#039;');
 }
 
+function ideaCard(idea) {
+  const q = state.query.trim();
+  const tagSpans = idea.tags
+    .map((t) => `<span class="recipe-tag${t === 'contains-dairy' ? ' contains-dairy' : ''}">${escapeHtml(t)}</span>`)
+    .join('');
+  return `
+    <article class="idea">
+      <div class="idea-row">
+        <span class="idea-badge" title="Idea — combinatorial, no recipe needed">💡</span>
+        <div class="idea-body">
+          <div class="idea-name">${highlight(idea.name, q)}</div>
+          <div class="idea-meta">${escapeHtml(idea.group || idea.section)}</div>
+        </div>
+        <div class="recipe-tags idea-tags">${tagSpans}</div>
+      </div>
+    </article>
+  `;
+}
+
 function recipeCard(r) {
   const q = state.query.trim();
   const isOpen = state.openIds.has(r.id);
@@ -145,9 +175,22 @@ function recipeCard(r) {
     .filter(Boolean)
     .join(', ');
 
+  // "Riff with" — show equivalence-class siblings of the recipe's primary ingredient.
+  // These come pre-baked into r.searchTerms by the build script.
+  const primaryLower = (r.primaryIngredient || '').toLowerCase();
+  const riffOptions = (r.searchTerms || [])
+    .filter((t) => t && !primaryLower.includes(t) && !t.includes(primaryLower))
+    // Drop the literal secondary ingredients (those aren't "riffs," they're "also in")
+    .filter((t) => !(r.secondaryIngredients || []).some((s) => s.toLowerCase().includes(t) || t.includes(s.toLowerCase())))
+    .slice(0, 6);
+  const riffHtml = riffOptions.length
+    ? `<div class="riff-hint">💡 Riff: try <strong>${riffOptions.map(escapeHtml).join('</strong>, <strong>')}</strong></div>`
+    : '';
+
   const details = isOpen
     ? `
     <div class="recipe-details">
+      ${riffHtml}
       <dl>
         ${r.ingredients ? `<dt>ingredients</dt><dd>${escapeHtml(r.ingredients)}</dd>` : ''}
         ${r.method ? `<dt>method</dt><dd>${escapeHtml(r.method)}</dd>` : ''}
@@ -184,19 +227,68 @@ function recipeCard(r) {
   `;
 }
 
+function renderItem(item) {
+  return item.type === 'idea' ? ideaCard(item) : recipeCard(item);
+}
+
+const PLATE_TEMPLATE_HTML = `
+  <div class="plate-template">
+    <div class="plate-title">Plate Template</div>
+    <div class="plate-formula">Protein + Starch + Veg/Fruit + Fat-or-Extra</div>
+    <div class="plate-sub">Pick one from each. Dinner solved. Not a creative project.</div>
+  </div>
+`;
+
+// Group ideas by their section/group (e.g., "5pm Spiral Mode", "Breakfast / Eggs").
+function groupIdeas(ideas) {
+  const groups = new Map();
+  for (const idea of ideas) {
+    const key = idea.section === idea.group?.toLowerCase()
+      ? capitalize(idea.section)
+      : `${capitalize(idea.section)} / ${idea.group || ''}`.replace(/\s\/\s$/, '');
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(idea);
+  }
+  return groups;
+}
+
+function capitalize(s) {
+  if (!s) return '';
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
 function render() {
-  const filtered = filterRecipes();
+  const filtered = filterItems();
   const hidden = countHiddenByFilters();
   const hiddenNote = hidden > 0
-    ? `<div class="hidden-note">${hidden} recipe${hidden === 1 ? '' : 's'} hidden by your filters. Toggle dairy-free off or clear tag chips to see ${hidden === 1 ? 'it' : 'them'}.</div>`
+    ? `<div class="hidden-note">${hidden} hidden by your filters. Toggle dairy-free off or clear tag chips to see ${hidden === 1 ? 'it' : 'them'}.</div>`
     : '';
+
+  // Pin the plate template at the top when viewing Ideas-only, no search, no tag filters.
+  const showPlate = state.contentType === 'ideas'
+    && !state.query.trim()
+    && state.activeTags.size === 0;
 
   if (filtered.length === 0) {
     els.results.innerHTML = hiddenNote;
-    els.empty.hidden = hidden > 0; // hide the generic "no recipes" if we have a specific reason
+    els.empty.hidden = hidden > 0;
   } else {
     els.empty.hidden = true;
-    els.results.innerHTML = hiddenNote + filtered.map(recipeCard).join('');
+    let html = hiddenNote;
+    if (showPlate) html += PLATE_TEMPLATE_HTML;
+
+    // When viewing Ideas-only (or All with no query), group ideas by section
+    if (state.contentType === 'ideas' && !state.query.trim()) {
+      const ideaItems = filtered.filter((x) => x.type === 'idea');
+      const grouped = groupIdeas(ideaItems);
+      for (const [groupName, items] of grouped) {
+        html += `<h2 class="group-header">${escapeHtml(groupName)}</h2>`;
+        html += items.map(renderItem).join('');
+      }
+    } else {
+      html += filtered.map(renderItem).join('');
+    }
+    els.results.innerHTML = html;
     // Wire up header clicks
     $$('.recipe-header').forEach((btn) => {
       btn.addEventListener('click', () => {
@@ -217,6 +309,7 @@ function syncHash() {
   if (state.query) params.set('q', state.query);
   if (state.activeTags.size) params.set('tags', Array.from(state.activeTags).join(','));
   if (!state.dairyFreeOnly) params.set('dairy', 'all');
+  if (state.contentType !== 'all') params.set('type', state.contentType);
   const hash = params.toString();
   history.replaceState(null, '', hash ? `#${hash}` : window.location.pathname);
 }
@@ -239,6 +332,13 @@ function restoreFromHash() {
     state.dairyFreeOnly = false;
     els.dairyToggle.checked = false;
   }
+  const type = params.get('type');
+  if (type === 'recipes' || type === 'ideas') {
+    state.contentType = type;
+    document.querySelectorAll('#contentTypeFilter .seg-btn').forEach((b) => {
+      b.classList.toggle('active', b.dataset.type === type);
+    });
+  }
 }
 
 // --- Event wiring --------------------------------------------------------
@@ -253,6 +353,38 @@ els.dairyToggle.addEventListener('change', (e) => {
   state.dairyFreeOnly = e.target.checked;
   syncHash();
   render();
+});
+
+// "Pick for me" — random item from the currently-filtered list.
+els.pickBtn.addEventListener('click', () => {
+  const pool = filterItems();
+  if (pool.length === 0) {
+    els.results.innerHTML = `<div class="hidden-note">Nothing to pick from with current filters. Clear something and try again.</div>`;
+    return;
+  }
+  const winner = pool[Math.floor(Math.random() * pool.length)];
+  // Open it if it's a recipe; just render its card pinned at top if it's an idea.
+  if (winner.type === 'recipe') state.openIds.add(winner.id);
+  els.results.innerHTML =
+    `<div class="hidden-note">🎲 Picked for you: <strong>${escapeHtml(winner.name)}</strong>. <a href="#" id="seeAll">See all</a></div>` +
+    renderItem(winner);
+  document.getElementById('seeAll')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    render();
+  });
+  // Scroll to results
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Content-type segmented control
+document.querySelectorAll('#contentTypeFilter .seg-btn').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('#contentTypeFilter .seg-btn').forEach((b) => b.classList.remove('active'));
+    btn.classList.add('active');
+    state.contentType = btn.dataset.type;
+    syncHash();
+    render();
+  });
 });
 
 // --- Service worker registration (offline support) -----------------------

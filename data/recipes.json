@@ -1,6 +1,7 @@
 {
-  "generated": "2026-06-08T15:11:27.694Z",
+  "generated": "2026-06-08T22:00:42.935Z",
   "recipeCount": 17,
+  "ideaCount": 102,
   "ingredientCount": 59,
   "tags": [
     "batch",
@@ -56,7 +57,8 @@
       "familyTip": null,
       "extras": [
         "makes 10 small scones, 45 min + cooling"
-      ]
+      ],
+      "type": "recipe"
     },
     {
       "id": "brown-rice-balls-with-spinach-and-edamame",
@@ -122,7 +124,8 @@
       "familyTip": null,
       "extras": [
         "makes 12 balls, 1 hour total time"
-      ]
+      ],
+      "type": "recipe"
     },
     {
       "id": "cheesy-rigatoni",
@@ -174,7 +177,8 @@
       "familyTip": null,
       "extras": [
         "makes about 1½ cups, 30 min total time"
-      ]
+      ],
+      "type": "recipe"
     },
     {
       "id": "chicken-carrot-and-brown-rice",
@@ -225,7 +229,8 @@
       "familyTip": null,
       "extras": [
         "makes ~2½ cups, 55 min total time"
-      ]
+      ],
+      "type": "recipe"
     },
     {
       "id": "french-toast-fingers-with-quick-berry-syrup",
@@ -263,7 +268,8 @@
       "familyTip": null,
       "extras": [
         "makes 15–20 fingers"
-      ]
+      ],
+      "type": "recipe"
     },
     {
       "id": "frittata-bites",
@@ -314,7 +320,8 @@
       "familyTip": null,
       "extras": [
         "makes 6 mini frittatas, 45 min total time"
-      ]
+      ],
+      "type": "recipe"
     },
     {
       "id": "glazed-tofu-sticks",
@@ -378,7 +385,8 @@
       "familyTip": null,
       "extras": [
         "makes 6 sticks, 40 min total time"
-      ]
+      ],
+      "type": "recipe"
     },
     {
       "id": "mini-meatballs",
@@ -439,7 +447,8 @@
       "familyTip": null,
       "extras": [
         "makes 24 meatballs, 45 min total time"
-      ]
+      ],
+      "type": "recipe"
     },
     {
       "id": "pbj-s-blender-bean-muffins",
@@ -508,7 +517,8 @@
       "familyTip": null,
       "extras": [
         "makes 12 mini muffins"
-      ]
+      ],
+      "type": "recipe"
     },
     {
       "id": "quick-berry-syrup",
@@ -547,7 +557,8 @@
       "familyTip": null,
       "extras": [
         "makes 1 cup syrup"
-      ]
+      ],
+      "type": "recipe"
     },
     {
       "id": "raw-fruit-and-nut-bars",
@@ -594,7 +605,8 @@
       "familyTip": null,
       "extras": [
         "makes 12 small bars, 15 min + 1 hr chilling"
-      ]
+      ],
+      "type": "recipe"
     },
     {
       "id": "red-lentil-carrot-and-coconut-milk",
@@ -636,7 +648,8 @@
       "familyTip": null,
       "extras": [
         "makes ~2½ cups, 35 min total time"
-      ]
+      ],
+      "type": "recipe"
     },
     {
       "id": "salmon-pea-and-rice",
@@ -690,7 +703,8 @@
       "familyTip": null,
       "extras": [
         "makes ~2¼ cups, 30 min total time"
-      ]
+      ],
+      "type": "recipe"
     },
     {
       "id": "savory-oatcakes",
@@ -727,7 +741,8 @@
       "familyTip": null,
       "extras": [
         "makes 12 small oatcakes, 45 min + cooling"
-      ]
+      ],
+      "type": "recipe"
     },
     {
       "id": "sunshine-bowl",
@@ -763,7 +778,8 @@
       "familyTip": "top with nuts, seeds, extra fruit",
       "extras": [
         "makes 8 × 1-oz servings — ice-cube-tray freezer friendly"
-      ]
+      ],
+      "type": "recipe"
     },
     {
       "id": "tiny-carrot-muffins",
@@ -827,7 +843,8 @@
       "familyTip": null,
       "extras": [
         "makes 24 mini muffins, 40 min + cooling"
-      ]
+      ],
+      "type": "recipe"
     },
     {
       "id": "zucchini-carrot-fritters",
@@ -879,6 +896,1131 @@
       "familyTip": null,
       "extras": [
         "makes 6 fritters, 35 min total time"
+      ],
+      "type": "recipe"
+    }
+  ],
+  "ideas": [
+    {
+      "id": "idea-scrambled-egg-toast-strip-cherry-tomatoes-avocado-0",
+      "type": "idea",
+      "name": "Scrambled egg + toast strip + cherry tomatoes + avocado",
+      "group": "5pm spiral mode — pick one, done",
+      "section": "5pm spiral mode — pick one, done",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-mini-meatballs-from-freezer-microwave-rice-frozen-peas-defro-1",
+      "type": "idea",
+      "name": "Mini meatballs (from freezer) + microwave rice + frozen peas (defrosted)",
+      "group": "5pm spiral mode — pick one, done",
+      "section": "5pm spiral mode — pick one, done",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-hummus-crackers-cucumber-berries-2",
+      "type": "idea",
+      "name": "Hummus + crackers + cucumber + berries",
+      "group": "5pm spiral mode — pick one, done",
+      "section": "5pm spiral mode — pick one, done",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-pasta-jar-marinara-frozen-broccoli-olive-oil-drizzle-3",
+      "type": "idea",
+      "name": "Pasta + jar marinara + frozen broccoli + olive oil drizzle",
+      "group": "5pm spiral mode — pick one, done",
+      "section": "5pm spiral mode — pick one, done",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-black-beans-rice-avocado-lime-tortilla-strip-4",
+      "type": "idea",
+      "name": "Black beans + rice + avocado + lime + tortilla strip",
+      "group": "5pm spiral mode — pick one, done",
+      "section": "5pm spiral mode — pick one, done",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-hardboiled-egg-toast-avocado-fruit-5",
+      "type": "idea",
+      "name": "Hardboiled egg + toast + avocado + fruit",
+      "group": "5pm spiral mode — pick one, done",
+      "section": "5pm spiral mode — pick one, done",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-lentil-soup-canned-or-batch-frozen-crackers-fruit-6",
+      "type": "idea",
+      "name": "Lentil soup (canned or batch-frozen) + crackers + fruit",
+      "group": "5pm spiral mode — pick one, done",
+      "section": "5pm spiral mode — pick one, done",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-scrambled-egg-toast-strip-7",
+      "type": "idea",
+      "name": "Scrambled egg + toast strip",
+      "group": "Eggs",
+      "section": "breakfast",
+      "tags": [
+        "breakfast",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-omelet-strips-or-wedges-not-tiny-dice-8",
+      "type": "idea",
+      "name": "Omelet — strips or wedges (not tiny dice)",
+      "group": "Eggs",
+      "section": "breakfast",
+      "tags": [
+        "breakfast",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-mini-frittatas-egg-muffins-freezer-friendly-30-sec-reheat-9",
+      "type": "idea",
+      "name": "Mini frittatas / egg muffins (freezer-friendly, 30 sec reheat)",
+      "group": "Eggs",
+      "section": "breakfast",
+      "tags": [
+        "breakfast",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-savory-oatmeal-with-egg-on-top-10",
+      "type": "idea",
+      "name": "Savory oatmeal with egg on top",
+      "group": "Eggs",
+      "section": "breakfast",
+      "tags": [
+        "breakfast",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-breakfast-burrito-scrambled-egg-black-beans-avocado-11",
+      "type": "idea",
+      "name": "Breakfast burrito: scrambled egg + black beans + avocado",
+      "group": "Eggs",
+      "section": "breakfast",
+      "tags": [
+        "breakfast",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-oatmeal-banana-nut-butter-cinnamon-12",
+      "type": "idea",
+      "name": "Oatmeal + banana + nut butter + cinnamon",
+      "group": "Oats",
+      "section": "breakfast",
+      "tags": [
+        "breakfast",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-oatmeal-strawberries-nut-butter-13",
+      "type": "idea",
+      "name": "Oatmeal + strawberries + nut butter",
+      "group": "Oats",
+      "section": "breakfast",
+      "tags": [
+        "breakfast",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-oatmeal-canned-pears-14",
+      "type": "idea",
+      "name": "Oatmeal + canned pears",
+      "group": "Oats",
+      "section": "breakfast",
+      "tags": [
+        "breakfast",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-overnight-oats-oat-milk-base-15",
+      "type": "idea",
+      "name": "Overnight oats (oat milk base)",
+      "group": "Oats",
+      "section": "breakfast",
+      "tags": [
+        "breakfast",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-iron-fortified-baby-oatmeal-the-easy-iron-win-16",
+      "type": "idea",
+      "name": "Iron-fortified baby oatmeal — the easy iron win",
+      "group": "Oats",
+      "section": "breakfast",
+      "tags": [
+        "breakfast",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-chia-pudding-oat-milk-chia-maple-syrup-set-overnight-fruit-17",
+      "type": "idea",
+      "name": "Chia pudding (oat milk + chia + maple syrup, set overnight) + fruit",
+      "group": "Oats",
+      "section": "breakfast",
+      "tags": [
+        "breakfast",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-smoothie-bowl-oat-milk-frozen-banana-spinach-nut-butter-thic-18",
+      "type": "idea",
+      "name": "Smoothie bowl (oat milk + frozen banana + spinach + nut butter, thick enough to spoon)",
+      "group": "Oats",
+      "section": "breakfast",
+      "tags": [
+        "breakfast",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-pancakes-banana-or-strawberry-19",
+      "type": "idea",
+      "name": "Pancakes + banana or strawberry",
+      "group": "Baked",
+      "section": "breakfast",
+      "tags": [
+        "breakfast",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-pumpkin-sweet-potato-spinach-pancakes-20",
+      "type": "idea",
+      "name": "Pumpkin / sweet potato / spinach pancakes",
+      "group": "Baked",
+      "section": "breakfast",
+      "tags": [
+        "breakfast",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-waffles-van-s-frozen-are-dairy-free-21",
+      "type": "idea",
+      "name": "Waffles (Van's frozen are dairy-free)",
+      "group": "Baked",
+      "section": "breakfast",
+      "tags": [
+        "breakfast",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-french-toast-with-oat-milk-22",
+      "type": "idea",
+      "name": "French toast with oat milk",
+      "group": "Baked",
+      "section": "breakfast",
+      "tags": [
+        "breakfast",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-muffins-banana-blueberry-zucchini-carrot-sweet-potato-bake-s-23",
+      "type": "idea",
+      "name": "Muffins — banana, blueberry, zucchini, carrot, sweet potato (bake Sunday, freeze)",
+      "group": "Baked",
+      "section": "breakfast",
+      "tags": [
+        "breakfast",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-avocado-toast-strips-hemp-seeds-optional-24",
+      "type": "idea",
+      "name": "Avocado toast strips (hemp seeds optional)",
+      "group": "Other",
+      "section": "breakfast",
+      "tags": [
+        "breakfast",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-cream-of-wheat-fruit-nut-butter-25",
+      "type": "idea",
+      "name": "Cream of wheat + fruit + nut butter",
+      "group": "Other",
+      "section": "breakfast",
+      "tags": [
+        "breakfast",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-whatever-was-for-dinner-last-night-chopped-fruit-veggie-26",
+      "type": "idea",
+      "name": "Whatever was for dinner last night, chopped + fruit + veggie",
+      "group": "Repurposed",
+      "section": "lunch",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-beans-rice-avocado-olive-oil-drizzle-27",
+      "type": "idea",
+      "name": "Beans + rice + avocado + olive oil drizzle",
+      "group": "Beans / lentils",
+      "section": "lunch",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-stuffed-sweet-potato-microwave-whole-split-top-with-black-be-28",
+      "type": "idea",
+      "name": "Stuffed sweet potato (microwave whole, split, top with black beans + avocado + lime)",
+      "group": "Beans / lentils",
+      "section": "lunch",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-lentil-soup-crackers-fruit-29",
+      "type": "idea",
+      "name": "Lentil soup + crackers + fruit",
+      "group": "Beans / lentils",
+      "section": "lunch",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-white-bean-soup-30",
+      "type": "idea",
+      "name": "White bean soup",
+      "group": "Beans / lentils",
+      "section": "lunch",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-chickpea-pasta-with-marinara-31",
+      "type": "idea",
+      "name": "Chickpea pasta with marinara",
+      "group": "Pasta",
+      "section": "lunch",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-pasta-with-nooch-pesto-basil-nutritional-yeast-olive-oil-pin-32",
+      "type": "idea",
+      "name": "Pasta with nooch pesto (basil + nutritional yeast + olive oil + pine nuts)",
+      "group": "Pasta",
+      "section": "lunch",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-almond-butter-jam-sandwich-banana-on-the-side-33",
+      "type": "idea",
+      "name": "Almond butter + jam sandwich + banana on the side",
+      "group": "Sandwiches / wraps",
+      "section": "lunch",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-hummus-pita-cucumber-olives-34",
+      "type": "idea",
+      "name": "Hummus + pita + cucumber + olives",
+      "group": "Sandwiches / wraps",
+      "section": "lunch",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-mini-quesadilla-hummus-spinach-avocado-35",
+      "type": "idea",
+      "name": "Mini quesadilla: hummus + spinach + avocado",
+      "group": "Sandwiches / wraps",
+      "section": "lunch",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-tuna-salad-olive-oil-mayo-on-toast-36",
+      "type": "idea",
+      "name": "Tuna salad (olive oil mayo) on toast",
+      "group": "Sandwiches / wraps",
+      "section": "lunch",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-tofu-wraps-37",
+      "type": "idea",
+      "name": "Tofu wraps",
+      "group": "Sandwiches / wraps",
+      "section": "lunch",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-veggie-burger-dr-praeger-s-california-dairy-free-38",
+      "type": "idea",
+      "name": "Veggie burger (Dr. Praeger's California — dairy-free)",
+      "group": "Quick assemble",
+      "section": "lunch",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-rice-bowl-rice-protein-veg-sauce-39",
+      "type": "idea",
+      "name": "Rice bowl: rice + protein + veg + sauce",
+      "group": "Quick assemble",
+      "section": "lunch",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-mini-pizza-on-naan-or-pita-tomato-sauce-veggies-40",
+      "type": "idea",
+      "name": "Mini pizza on naan or pita (tomato sauce + veggies)",
+      "group": "Quick assemble",
+      "section": "lunch",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-pasta-marinara-side-veg-41",
+      "type": "idea",
+      "name": "Pasta + marinara + side veg",
+      "group": "Pasta",
+      "section": "dinner",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-meatballs-pasta-or-rice-42",
+      "type": "idea",
+      "name": "Meatballs + pasta or rice",
+      "group": "Pasta",
+      "section": "dinner",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-baked-salmon-roasted-sweet-potato-steamed-broccoli-43",
+      "type": "idea",
+      "name": "Baked salmon + roasted sweet potato + steamed broccoli",
+      "group": "Fish / seafood",
+      "section": "dinner",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-shrimp-and-pea-fritters-44",
+      "type": "idea",
+      "name": "Shrimp and pea fritters",
+      "group": "Fish / seafood",
+      "section": "dinner",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-other-mild-white-fish-cod-halibut-tilapia-mahi-mahi-45",
+      "type": "idea",
+      "name": "Other mild white fish: cod, halibut, tilapia, mahi-mahi",
+      "group": "Fish / seafood",
+      "section": "dinner",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-chicken-thighs-boneless-rice-roasted-veg-46",
+      "type": "idea",
+      "name": "Chicken thighs (boneless!) + rice + roasted veg",
+      "group": "Chicken",
+      "section": "dinner",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-chicken-noodle-soup-dairy-free-47",
+      "type": "idea",
+      "name": "Chicken noodle soup (dairy-free)",
+      "group": "Chicken",
+      "section": "dinner",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-slow-cooker-pot-roast-good-iron-boost-from-beef-48",
+      "type": "idea",
+      "name": "Slow cooker pot roast (good iron boost from beef)",
+      "group": "Chicken",
+      "section": "dinner",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-bean-tacos-deconstructed-beans-rice-avocado-tortilla-strips-49",
+      "type": "idea",
+      "name": "Bean tacos (deconstructed: beans, rice, avocado, tortilla strips)",
+      "group": "Beans / tofu / lentils",
+      "section": "dinner",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-tofu-stir-fry-rice-50",
+      "type": "idea",
+      "name": "Tofu stir fry + rice",
+      "group": "Beans / tofu / lentils",
+      "section": "dinner",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-breaded-tofu-with-nooch-51",
+      "type": "idea",
+      "name": "Breaded tofu with nooch",
+      "group": "Beans / tofu / lentils",
+      "section": "dinner",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-chili-beef-or-veggie-cornbread-52",
+      "type": "idea",
+      "name": "Chili (beef or veggie) + cornbread",
+      "group": "Beans / tofu / lentils",
+      "section": "dinner",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-lentil-soup-53",
+      "type": "idea",
+      "name": "Lentil soup",
+      "group": "Beans / tofu / lentils",
+      "section": "dinner",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-minestrone-54",
+      "type": "idea",
+      "name": "Minestrone",
+      "group": "Beans / tofu / lentils",
+      "section": "dinner",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-butternut-squash-soup-55",
+      "type": "idea",
+      "name": "Butternut squash soup",
+      "group": "Soups (when you want low effort)",
+      "section": "dinner",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-tomato-soup-with-cashew-cream-56",
+      "type": "idea",
+      "name": "Tomato soup with cashew cream",
+      "group": "Soups (when you want low effort)",
+      "section": "dinner",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-mild-curry-coconut-milk-based-57",
+      "type": "idea",
+      "name": "Mild curry (coconut milk based)",
+      "group": "Soups (when you want low effort)",
+      "section": "dinner",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-protein-veg-olive-oil-season-400-f-20-25-min-58",
+      "type": "idea",
+      "name": "Protein + veg + olive oil + season → 400°F, 20–25 min",
+      "group": "Sheet pan (one-tray solution)",
+      "section": "dinner",
+      "tags": [
+        "main",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-banana-coins-59",
+      "type": "idea",
+      "name": "Banana coins",
+      "group": "Single items (grab-and-go)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-berries-any-kind-60",
+      "type": "idea",
+      "name": "Berries (any kind)",
+      "group": "Single items (grab-and-go)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-mango-cubes-61",
+      "type": "idea",
+      "name": "Mango cubes",
+      "group": "Single items (grab-and-go)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-pear-chunks-fresh-or-canned-62",
+      "type": "idea",
+      "name": "Pear chunks (fresh or canned)",
+      "group": "Single items (grab-and-go)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-cucumber-strips-peeled-63",
+      "type": "idea",
+      "name": "Cucumber strips (peeled)",
+      "group": "Single items (grab-and-go)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-soft-cooked-carrot-sticks-64",
+      "type": "idea",
+      "name": "Soft-cooked carrot sticks",
+      "group": "Single items (grab-and-go)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-avocado-chunks-65",
+      "type": "idea",
+      "name": "Avocado chunks",
+      "group": "Single items (grab-and-go)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-edamame-shelled-66",
+      "type": "idea",
+      "name": "Edamame (shelled)",
+      "group": "Single items (grab-and-go)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-crackers-67",
+      "type": "idea",
+      "name": "Crackers",
+      "group": "Single items (grab-and-go)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-rice-cake-plain-68",
+      "type": "idea",
+      "name": "Rice cake (plain)",
+      "group": "Single items (grab-and-go)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-toast-strip-69",
+      "type": "idea",
+      "name": "Toast strip",
+      "group": "Single items (grab-and-go)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-plant-yogurt-70",
+      "type": "idea",
+      "name": "Plant yogurt",
+      "group": "Single items (grab-and-go)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-applesauce-71",
+      "type": "idea",
+      "name": "Applesauce",
+      "group": "Single items (grab-and-go)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-frozen-banana-coins-good-for-teething-72",
+      "type": "idea",
+      "name": "Frozen banana coins (good for teething)",
+      "group": "Single items (grab-and-go)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-olives-pitted-halved-surprisingly-good-toddler-food-73",
+      "type": "idea",
+      "name": "Olives (pitted, halved — surprisingly good toddler food)",
+      "group": "Single items (grab-and-go)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-apple-slices-nut-butter-74",
+      "type": "idea",
+      "name": "Apple slices + nut butter",
+      "group": "Two-component combos (a real snack)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-banana-nut-butter-75",
+      "type": "idea",
+      "name": "Banana + nut butter",
+      "group": "Two-component combos (a real snack)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-crackers-hummus-76",
+      "type": "idea",
+      "name": "Crackers + hummus",
+      "group": "Two-component combos (a real snack)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-crackers-avocado-mash-77",
+      "type": "idea",
+      "name": "Crackers + avocado mash",
+      "group": "Two-component combos (a real snack)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-rice-cake-avocado-78",
+      "type": "idea",
+      "name": "Rice cake + avocado",
+      "group": "Two-component combos (a real snack)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-rice-cake-nut-butter-banana-coins-79",
+      "type": "idea",
+      "name": "Rice cake + nut butter + banana coins",
+      "group": "Two-component combos (a real snack)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-toast-nut-butter-banana-coins-80",
+      "type": "idea",
+      "name": "Toast + nut butter + banana coins",
+      "group": "Two-component combos (a real snack)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-toast-avocado-81",
+      "type": "idea",
+      "name": "Toast + avocado",
+      "group": "Two-component combos (a real snack)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-plant-yogurt-berries-82",
+      "type": "idea",
+      "name": "Plant yogurt + berries",
+      "group": "Two-component combos (a real snack)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-hummus-cucumber-spears-he-likes-garlic-hummus-confirmed-june-83",
+      "type": "idea",
+      "name": "Hummus + cucumber spears (he likes garlic hummus — confirmed June 1)",
+      "group": "Two-component combos (a real snack)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-mini-meatballs-sliced-fruit-84",
+      "type": "idea",
+      "name": "Mini meatballs + sliced fruit",
+      "group": "Two-component combos (a real snack)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-tofu-cubes-steamed-broccoli-85",
+      "type": "idea",
+      "name": "Tofu cubes + steamed broccoli",
+      "group": "Two-component combos (a real snack)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-baked-sweet-potato-a-few-crackers-86",
+      "type": "idea",
+      "name": "Baked sweet potato + a few crackers",
+      "group": "Two-component combos (a real snack)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-guacamole-broken-tortilla-chips-87",
+      "type": "idea",
+      "name": "Guacamole + broken tortilla chips",
+      "group": "Two-component combos (a real snack)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-hummus-crackers-88",
+      "type": "idea",
+      "name": "Hummus + crackers",
+      "group": "Protein-leaning savory",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-hardboiled-egg-quartered-89",
+      "type": "idea",
+      "name": "Hardboiled egg (quartered)",
+      "group": "Protein-leaning savory",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-mini-meatballs-batch-freeze-reheat-90",
+      "type": "idea",
+      "name": "Mini meatballs (batch, freeze, reheat)",
+      "group": "Protein-leaning savory",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-tofu-cubes-baked-plain-91",
+      "type": "idea",
+      "name": "Tofu cubes (baked plain)",
+      "group": "Protein-leaning savory",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-roasted-chickpeas-crispy-addictive-92",
+      "type": "idea",
+      "name": "Roasted chickpeas (crispy, addictive)",
+      "group": "Protein-leaning savory",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-white-bean-dip-crackers-93",
+      "type": "idea",
+      "name": "White bean dip + crackers",
+      "group": "Protein-leaning savory",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-nut-butter-on-toast-94",
+      "type": "idea",
+      "name": "Nut butter on toast",
+      "group": "Protein-leaning savory",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-edamame-95",
+      "type": "idea",
+      "name": "Edamame",
+      "group": "Protein-leaning savory",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-smoothie-pops-freeze-leftover-smoothie-in-popsicle-molds-96",
+      "type": "idea",
+      "name": "Smoothie pops (freeze leftover smoothie in popsicle molds)",
+      "group": "Sweet treats (still real food)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-energy-balls-oats-dates-nut-butter-no-bake-freezer-friendly-97",
+      "type": "idea",
+      "name": "Energy balls (oats + dates + nut butter, no-bake, freezer-friendly)",
+      "group": "Sweet treats (still real food)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-baked-apple-slices-with-cinnamon-98",
+      "type": "idea",
+      "name": "Baked apple slices with cinnamon",
+      "group": "Sweet treats (still real food)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-baked-sweet-potato-fries-99",
+      "type": "idea",
+      "name": "Baked sweet potato fries",
+      "group": "Sweet treats (still real food)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-frozen-banana-coins-100",
+      "type": "idea",
+      "name": "Frozen banana coins",
+      "group": "Sweet treats (still real food)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
+      ]
+    },
+    {
+      "id": "idea-mango-cubes-fresh-or-frozen-thawed-101",
+      "type": "idea",
+      "name": "Mango cubes (fresh or frozen-thawed)",
+      "group": "Sweet treats (still real food)",
+      "section": "snacks",
+      "tags": [
+        "snack",
+        "dairy-free"
       ]
     }
   ],

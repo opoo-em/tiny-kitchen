@@ -17,6 +17,9 @@
     <header class="topbar">
       <h1>Tiny Kitchen</h1>
       <p class="subtitle" id="stats"></p>
+      <button id="pickForMe" class="pick-btn" type="button" title="Pick something from the current view">
+        🎲 Pick for me
+      </button>
     </header>
 
     <main>
@@ -36,11 +39,21 @@
           <span class="toggle-label">Dairy-free only</span>
         </label>
 
+        <div class="segmented" id="contentTypeFilter" role="tablist" aria-label="Content type">
+          <button class="seg-btn active" data-type="all">All</button>
+          <button class="seg-btn" data-type="recipes">Recipes</button>
+          <button class="seg-btn" data-type="ideas">💡 Ideas</button>
+        </div>
+
         <div class="tags" id="tagFilter" aria-label="Filter by tag"></div>
       </div>
 
       <div id="results" class="results"></div>
-      <div id="empty" class="empty" hidden>No recipes match. Try clearing filters.</div>
+      <div id="empty" class="empty" hidden>
+        <div style="font-size: 2rem; margin-bottom: 0.4rem;">🍳</div>
+        Nothing found.<br/>
+        <small>Try clearing the search, switching tabs, or toggling dairy-free off.</small>
+      </div>
     </main>
 
     <script src="app.js"></script>
