@@ -76,29 +76,37 @@ function renderTagChips() {
 
 // --- Filtering -----------------------------------------------------------
 
+// Match a recipe against the current search query (ignoring filters).
+function matchesQuery(r, q) {
+  if (!q) return true;
+  const hay = [
+    r.name,
+    r.primaryIngredient || '',
+    (r.secondaryIngredients || []).join(' '),
+    (r.searchTerms || []).join(' '),
+    r.ingredients || '',
+  ]
+    .join(' ')
+    .toLowerCase();
+  return hay.includes(q);
+}
+
+// Match against active filters (dairy + tags).
+function matchesFilters(r) {
+  if (state.dairyFreeOnly && r.tags.includes('contains-dairy')) return false;
+  for (const t of state.activeTags) if (!r.tags.includes(t)) return false;
+  return true;
+}
+
 function filterRecipes() {
   const q = state.query.trim().toLowerCase();
-  return state.recipes.filter((r) => {
-    // Dairy-free only: hide recipes tagged contains-dairy
-    if (state.dairyFreeOnly && r.tags.includes('contains-dairy')) return false;
+  return state.recipes.filter((r) => matchesQuery(r, q) && matchesFilters(r));
+}
 
-    // Tag filter: recipe must have ALL active tags
-    for (const t of state.activeTags) if (!r.tags.includes(t)) return false;
-
-    // Search query: match against name, primary ingredient, secondary ingredients, raw ingredients string
-    if (q) {
-      const hay = [
-        r.name,
-        r.primaryIngredient || '',
-        (r.secondaryIngredients || []).join(' '),
-        r.ingredients || '',
-      ]
-        .join(' ')
-        .toLowerCase();
-      if (!hay.includes(q)) return false;
-    }
-    return true;
-  });
+// Count recipes that match the search query but are hidden by active filters.
+function countHiddenByFilters() {
+  const q = state.query.trim().toLowerCase();
+  return state.recipes.filter((r) => matchesQuery(r, q) && !matchesFilters(r)).length;
 }
 
 // --- Rendering -----------------------------------------------------------
@@ -178,12 +186,17 @@ function recipeCard(r) {
 
 function render() {
   const filtered = filterRecipes();
+  const hidden = countHiddenByFilters();
+  const hiddenNote = hidden > 0
+    ? `<div class="hidden-note">${hidden} recipe${hidden === 1 ? '' : 's'} hidden by your filters. Toggle dairy-free off or clear tag chips to see ${hidden === 1 ? 'it' : 'them'}.</div>`
+    : '';
+
   if (filtered.length === 0) {
-    els.results.innerHTML = '';
-    els.empty.hidden = false;
+    els.results.innerHTML = hiddenNote;
+    els.empty.hidden = hidden > 0; // hide the generic "no recipes" if we have a specific reason
   } else {
     els.empty.hidden = true;
-    els.results.innerHTML = filtered.map(recipeCard).join('');
+    els.results.innerHTML = hiddenNote + filtered.map(recipeCard).join('');
     // Wire up header clicks
     $$('.recipe-header').forEach((btn) => {
       btn.addEventListener('click', () => {

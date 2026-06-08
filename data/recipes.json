@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-08T14:16:45.361Z",
+  "generated": "2026-06-08T15:11:27.694Z",
   "recipeCount": 17,
   "ingredientCount": 59,
   "tags": [
@@ -9,10 +9,8 @@
     "dairy-free",
     "freezer-friendly",
     "iron",
-    "no-bake",
+    "main",
     "no-cook",
-    "no-cook except steam",
-    "no-sugar-added",
     "one-pan",
     "oven",
     "quick",
@@ -28,6 +26,7 @@
         "batch",
         "freezer-friendly",
         "contains-dairy",
+        "breakfast",
         "snack"
       ],
       "primaryIngredient": "Apples (dried)",
@@ -36,6 +35,13 @@
         "Sugar (white)",
         "Butter (unsalted)",
         "Heavy Cream"
+      ],
+      "searchTerms": [
+        "apples (dried)",
+        "flour",
+        "sugar (white)",
+        "butter (unsalted)",
+        "heavy cream"
       ],
       "category": "Fruit",
       "source": "ATK Complete Baby & Toddler Cookbook, p. 109 (\"Finger Foods\")",
@@ -60,7 +66,9 @@
         "batch",
         "freezer-friendly",
         "iron",
-        "dairy-free"
+        "dairy-free",
+        "main",
+        "snack"
       ],
       "primaryIngredient": "Spinach",
       "secondaryIngredients": [
@@ -73,6 +81,33 @@
         "Nori",
         "Curry Powder",
         "Cilantro (fresh)"
+      ],
+      "searchTerms": [
+        "spinach",
+        "chickpeas",
+        "rice (white / brown)",
+        "edamame (frozen, shelled)",
+        "scallion",
+        "fresh ginger",
+        "sesame oil (toasted)",
+        "nori",
+        "curry powder",
+        "cilantro (fresh)",
+        "kale",
+        "chard",
+        "beet greens",
+        "leafy greens",
+        "white beans",
+        "black beans",
+        "kidney beans",
+        "pinto beans",
+        "cannellini",
+        "navy beans",
+        "white rice",
+        "brown rice",
+        "long-grain rice",
+        "short-grain rice",
+        "rice"
       ],
       "category": "Veg",
       "source": "ATK Complete Baby & Toddler Cookbook, p. 98–99 (\"Finger Foods\")",
@@ -96,7 +131,8 @@
         "stovetop",
         "quick",
         "one-pan",
-        "contains-dairy"
+        "contains-dairy",
+        "main"
       ],
       "primaryIngredient": "Pasta",
       "secondaryIngredients": [
@@ -104,6 +140,26 @@
         "Basil (fresh)",
         "Butter (unsalted)",
         "Parmesan"
+      ],
+      "searchTerms": [
+        "pasta",
+        "lemon (juice)",
+        "basil (fresh)",
+        "butter (unsalted)",
+        "parmesan",
+        "lemon",
+        "lime",
+        "orange",
+        "citrus",
+        "rigatoni",
+        "penne",
+        "fusilli",
+        "shells",
+        "macaroni",
+        "pecorino",
+        "asiago",
+        "grana padano",
+        "hard cheese"
       ],
       "category": "Starches",
       "source": "ATK Complete Baby & Toddler Cookbook, p. 100–101 (\"Finger Foods\")",
@@ -129,12 +185,32 @@
         "batch",
         "freezer-friendly",
         "iron",
-        "dairy-free"
+        "dairy-free",
+        "main"
       ],
       "primaryIngredient": "Chicken Thighs (boneless skinless)",
       "secondaryIngredients": [
         "Rice (white / brown)",
         "Carrots"
+      ],
+      "searchTerms": [
+        "chicken thighs (boneless skinless)",
+        "rice (white / brown)",
+        "carrots",
+        "beef",
+        "turkey",
+        "chicken",
+        "pork",
+        "ground meat",
+        "sweet potato",
+        "butternut squash",
+        "pumpkin",
+        "carrot",
+        "white rice",
+        "brown rice",
+        "long-grain rice",
+        "short-grain rice",
+        "rice"
       ],
       "category": "Proteins",
       "source": "ATK Complete Baby & Toddler Cookbook, p. 67 (\"Adventurous Combinations\")",
@@ -157,6 +233,7 @@
       "tags": [
         "stovetop",
         "quick",
+        "dairy-free",
         "breakfast"
       ],
       "primaryIngredient": "Bread",
@@ -165,6 +242,13 @@
         "Flaxseed (ground)",
         "Ground Cinnamon",
         "Vanilla Extract"
+      ],
+      "searchTerms": [
+        "bread",
+        "coconut milk (canned, regular or light)",
+        "flaxseed (ground)",
+        "ground cinnamon",
+        "vanilla extract"
       ],
       "category": "Starches",
       "source": "The Plant-Based Baby, p. 222",
@@ -188,7 +272,10 @@
         "oven",
         "batch",
         "contains-dairy",
-        "iron"
+        "iron",
+        "breakfast",
+        "main",
+        "snack"
       ],
       "primaryIngredient": "Eggs",
       "secondaryIngredients": [
@@ -196,6 +283,23 @@
         "Shallots",
         "Half-and-Half",
         "Parmesan"
+      ],
+      "searchTerms": [
+        "eggs",
+        "potato",
+        "shallots",
+        "half-and-half",
+        "parmesan",
+        "pecorino",
+        "asiago",
+        "grana padano",
+        "hard cheese",
+        "onion",
+        "shallot",
+        "leek",
+        "yellow onion",
+        "white onion",
+        "sweet onion"
       ],
       "category": "Proteins",
       "source": "ATK Complete Baby & Toddler Cookbook, p. TBD",
@@ -217,7 +321,10 @@
       "name": "Glazed Tofu Sticks",
       "tags": [
         "stovetop",
-        "dairy-free"
+        "dairy-free",
+        "iron",
+        "main",
+        "snack"
       ],
       "primaryIngredient": "Tofu (firm)",
       "secondaryIngredients": [
@@ -229,6 +336,34 @@
         "Soy Sauce (low-sodium)",
         "Maple Syrup",
         "Ground Ginger"
+      ],
+      "searchTerms": [
+        "tofu (firm)",
+        "carrots",
+        "berries",
+        "mango",
+        "lemon (juice)",
+        "chia seeds",
+        "soy sauce (low-sodium)",
+        "maple syrup",
+        "ground ginger",
+        "lemon",
+        "lime",
+        "orange",
+        "citrus",
+        "strawberries",
+        "blueberries",
+        "raspberries",
+        "blackberries",
+        "mixed berries",
+        "sweet potato",
+        "butternut squash",
+        "pumpkin",
+        "carrot",
+        "tofu",
+        "firm tofu",
+        "silken tofu",
+        "extra-firm tofu"
       ],
       "category": "Proteins",
       "source": "ATK Complete Baby & Toddler Cookbook, p. TBD",
@@ -253,7 +388,9 @@
         "batch",
         "freezer-friendly",
         "iron",
-        "contains-dairy"
+        "contains-dairy",
+        "main",
+        "snack"
       ],
       "primaryIngredient": "Ground Beef",
       "secondaryIngredients": [
@@ -264,6 +401,30 @@
         "Parsley (fresh)",
         "Milk (whole)",
         "Parmesan"
+      ],
+      "searchTerms": [
+        "ground beef",
+        "eggs",
+        "bread",
+        "onion",
+        "garlic",
+        "parsley (fresh)",
+        "milk (whole)",
+        "parmesan",
+        "beef",
+        "turkey",
+        "chicken",
+        "pork",
+        "ground meat",
+        "pecorino",
+        "asiago",
+        "grana padano",
+        "hard cheese",
+        "shallot",
+        "leek",
+        "yellow onion",
+        "white onion",
+        "sweet onion"
       ],
       "category": "Proteins",
       "source": "ATK Complete Baby & Toddler Cookbook, p. 103 (\"Finger Foods\")",
@@ -288,6 +449,7 @@
         "freezer-friendly",
         "batch",
         "iron",
+        "dairy-free",
         "breakfast",
         "snack"
       ],
@@ -300,6 +462,38 @@
         "Soy Milk (unsweetened)",
         "Ground Cinnamon",
         "Vanilla Extract"
+      ],
+      "searchTerms": [
+        "chickpeas",
+        "oats",
+        "kale",
+        "banana",
+        "nut & seed butters (sunflower, almond, etc.)",
+        "soy milk (unsweetened)",
+        "ground cinnamon",
+        "vanilla extract",
+        "spinach",
+        "chard",
+        "beet greens",
+        "leafy greens",
+        "peanut butter",
+        "almond butter",
+        "sunflower butter",
+        "cashew butter",
+        "tahini",
+        "nut butter",
+        "seed butter",
+        "white beans",
+        "black beans",
+        "kidney beans",
+        "pinto beans",
+        "cannellini",
+        "navy beans",
+        "soy milk",
+        "oat milk",
+        "almond milk",
+        "cashew milk",
+        "non-dairy milk"
       ],
       "category": "Proteins",
       "source": "The Plant-Based Baby, p. 206",
@@ -322,12 +516,23 @@
       "tags": [
         "stovetop",
         "quick",
-        "no-sugar-added"
+        "dairy-free",
+        "breakfast"
       ],
       "primaryIngredient": "Berries",
       "secondaryIngredients": [
         "Ground Cinnamon",
         "Vanilla Extract"
+      ],
+      "searchTerms": [
+        "berries",
+        "ground cinnamon",
+        "vanilla extract",
+        "strawberries",
+        "blueberries",
+        "raspberries",
+        "blackberries",
+        "mixed berries"
       ],
       "category": "Fruit",
       "source": "The Plant-Based Baby, p. 223",
@@ -349,15 +554,32 @@
       "name": "Raw Fruit and Nut Bars",
       "tags": [
         "no-cook",
-        "no-bake",
         "batch",
-        "snack",
-        "dairy-free"
+        "iron",
+        "dairy-free",
+        "snack"
       ],
       "primaryIngredient": "Dried Fruit (cherries / apricots / cranberries / dates / raisins)",
       "secondaryIngredients": [
         "Almonds (raw, whole)",
         "Ground Cinnamon"
+      ],
+      "searchTerms": [
+        "dried fruit (cherries / apricots / cranberries / dates / raisins)",
+        "almonds (raw, whole)",
+        "ground cinnamon",
+        "strawberries",
+        "blueberries",
+        "raspberries",
+        "blackberries",
+        "mixed berries",
+        "berries",
+        "raisins",
+        "cranberries",
+        "cherries",
+        "apricots",
+        "dates",
+        "dried fruit"
       ],
       "category": "Fruit",
       "source": "ATK Complete Baby & Toddler Cookbook, p. 111 (\"Finger Foods\")",
@@ -384,12 +606,22 @@
         "batch",
         "freezer-friendly",
         "iron",
-        "dairy-free"
+        "dairy-free",
+        "main"
       ],
       "primaryIngredient": "Lentils",
       "secondaryIngredients": [
         "Carrots",
         "Coconut Milk (canned, regular or light)"
+      ],
+      "searchTerms": [
+        "lentils",
+        "carrots",
+        "coconut milk (canned, regular or light)",
+        "sweet potato",
+        "butternut squash",
+        "pumpkin",
+        "carrot"
       ],
       "category": "Proteins",
       "source": "ATK Complete Baby & Toddler Cookbook, p. 59 (\"Adventurous Combinations\")",
@@ -416,13 +648,34 @@
         "batch",
         "freezer-friendly",
         "iron",
-        "dairy-free"
+        "dairy-free",
+        "main"
       ],
       "primaryIngredient": "Salmon (fresh)",
       "secondaryIngredients": [
         "Rice (white / brown)",
         "Peas (frozen)",
         "Orange (zest + juice)"
+      ],
+      "searchTerms": [
+        "salmon (fresh)",
+        "rice (white / brown)",
+        "peas (frozen)",
+        "orange (zest + juice)",
+        "salmon",
+        "cod",
+        "tilapia",
+        "halibut",
+        "fish",
+        "lemon",
+        "lime",
+        "orange",
+        "citrus",
+        "white rice",
+        "brown rice",
+        "long-grain rice",
+        "short-grain rice",
+        "rice"
       ],
       "category": "Proteins",
       "source": "ATK Complete Baby & Toddler Cookbook, p. 75 (\"Adventurous Combinations\")",
@@ -446,6 +699,7 @@
         "oven",
         "batch",
         "contains-dairy",
+        "breakfast",
         "snack"
       ],
       "primaryIngredient": "Oats",
@@ -453,6 +707,12 @@
         "Flour",
         "Sugar (white)",
         "Butter (unsalted)"
+      ],
+      "searchTerms": [
+        "oats",
+        "flour",
+        "sugar (white)",
+        "butter (unsalted)"
       ],
       "category": "Starches",
       "source": "ATK Complete Baby & Toddler Cookbook, p. 105 (\"Finger Foods\")",
@@ -473,13 +733,23 @@
       "id": "sunshine-bowl",
       "name": "Sunshine Bowl",
       "tags": [
+        "stovetop",
         "batch",
         "freezer-friendly",
         "iron",
-        "no-cook except steam"
+        "dairy-free",
+        "main",
+        "snack"
       ],
       "primaryIngredient": "Tofu (silken)",
       "secondaryIngredients": [],
+      "searchTerms": [
+        "tofu (silken)",
+        "tofu",
+        "firm tofu",
+        "silken tofu",
+        "extra-firm tofu"
+      ],
       "category": "Proteins",
       "source": "The Plant-Based Baby, p. 102",
       "ingredients": "silken tofu (½ cup, drained), carrots (¼ cup steamed ~10 min), strawberries (¼ cup fresh or thawed), mango chunks (¼ cup), chia seeds (1 tsp)",
@@ -502,7 +772,9 @@
         "oven",
         "batch",
         "freezer-friendly",
-        "dairy-free"
+        "dairy-free",
+        "breakfast",
+        "snack"
       ],
       "primaryIngredient": "Carrots",
       "secondaryIngredients": [
@@ -514,6 +786,33 @@
         "Ground Cinnamon",
         "Vanilla Extract",
         "Yogurt (plain)"
+      ],
+      "searchTerms": [
+        "carrots",
+        "eggs",
+        "flour",
+        "dried fruit (cherries / apricots / cranberries / dates / raisins)",
+        "brown sugar (light or dark, packed)",
+        "ground ginger",
+        "ground cinnamon",
+        "vanilla extract",
+        "yogurt (plain)",
+        "strawberries",
+        "blueberries",
+        "raspberries",
+        "blackberries",
+        "mixed berries",
+        "berries",
+        "raisins",
+        "cranberries",
+        "cherries",
+        "apricots",
+        "dates",
+        "dried fruit",
+        "sweet potato",
+        "butternut squash",
+        "pumpkin",
+        "carrot"
       ],
       "category": "Veg",
       "source": "ATK Complete Baby & Toddler Cookbook, p. 107 (\"Finger Foods\")",
@@ -535,7 +834,9 @@
       "name": "Zucchini-Carrot Fritters",
       "tags": [
         "stovetop",
-        "dairy-free"
+        "dairy-free",
+        "main",
+        "snack"
       ],
       "primaryIngredient": "Zucchini",
       "secondaryIngredients": [
@@ -546,6 +847,24 @@
         "Dill (fresh)",
         "Parmesan",
         "Feta"
+      ],
+      "searchTerms": [
+        "zucchini",
+        "eggs",
+        "flour",
+        "carrots",
+        "basil (fresh)",
+        "dill (fresh)",
+        "parmesan",
+        "feta",
+        "pecorino",
+        "asiago",
+        "grana padano",
+        "hard cheese",
+        "sweet potato",
+        "butternut squash",
+        "pumpkin",
+        "carrot"
       ],
       "category": "Veg",
       "source": "ATK Complete Baby & Toddler Cookbook, p. 88–89 (\"Finger Foods\")",
