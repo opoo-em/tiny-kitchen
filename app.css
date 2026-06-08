@@ -1,0 +1,297 @@
+/* Tiny Kitchen — functional placeholder palette
+ * Warm cream + terracotta accent. Em art-directs the real palette later.
+ */
+
+:root {
+  --bg: #faf8f3;
+  --card: #ffffff;
+  --border: #e5e0d5;
+  --text: #2c2825;
+  --muted: #7a716a;
+  --accent: #c97d4d;
+  --accent-soft: #f1dcc9;
+  --chip-bg: #ece6d8;
+  --chip-bg-hover: #ddd4c0;
+  --chip-active: var(--accent);
+  --chip-active-text: #ffffff;
+  --danger-soft: #f7e0d4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  padding-bottom: env(safe-area-inset-bottom, 1rem);
+}
+
+.topbar {
+  background: var(--accent);
+  color: #fff;
+  padding: 1rem 1rem calc(1rem + env(safe-area-inset-top, 0));
+  padding-top: calc(1rem + env(safe-area-inset-top, 0));
+  text-align: center;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.topbar .subtitle {
+  margin: 0.25rem 0 0;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+main {
+  padding: 1rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  z-index: 5;
+}
+
+#search {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: var(--card);
+  color: var(--text);
+  font-family: inherit;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+#search:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: -1px;
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+  font-size: 0.95rem;
+  align-self: flex-start;
+  padding: 0.25rem 0;
+}
+
+.toggle input[type="checkbox"] {
+  width: 1.25rem;
+  height: 1.25rem;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.toggle-label {
+  font-weight: 500;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.chip {
+  background: var(--chip-bg);
+  color: var(--text);
+  border: none;
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.1s ease;
+}
+
+.chip:hover {
+  background: var(--chip-bg-hover);
+}
+
+.chip.active {
+  background: var(--chip-active);
+  color: var(--chip-active-text);
+}
+
+.chip.contains-dairy {
+  background: var(--danger-soft);
+}
+
+.chip.contains-dairy.active {
+  background: var(--accent);
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.recipe {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0.85rem;
+  overflow: hidden;
+}
+
+.recipe-header {
+  padding: 0.9rem 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  background: var(--card);
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-family: inherit;
+  color: inherit;
+}
+
+.recipe-header:hover {
+  background: var(--accent-soft);
+}
+
+.recipe-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.recipe-title .caret {
+  font-size: 0.85rem;
+  color: var(--muted);
+  transition: transform 0.15s ease;
+}
+
+.recipe.open .recipe-title .caret {
+  transform: rotate(90deg);
+}
+
+.recipe-meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.recipe-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.1rem;
+}
+
+.recipe-tag {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  background: var(--chip-bg);
+  color: var(--muted);
+}
+
+.recipe-tag.contains-dairy {
+  background: var(--danger-soft);
+  color: #8a4a2a;
+}
+
+.recipe-details {
+  padding: 0 1rem 1rem;
+  border-top: 1px solid var(--border);
+  display: none;
+}
+
+.recipe.open .recipe-details {
+  display: block;
+}
+
+.recipe-details dl {
+  margin: 0.75rem 0 0;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.4rem 0.85rem;
+  font-size: 0.92rem;
+}
+
+.recipe-details dt {
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: lowercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  padding-top: 0.15rem;
+}
+
+.recipe-details dd {
+  margin: 0;
+  color: var(--text);
+  word-wrap: break-word;
+}
+
+.recipe-details .ingredient-links {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.recipe-details .ingredient-links span {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.empty {
+  text-align: center;
+  color: var(--muted);
+  padding: 2rem 1rem;
+  font-size: 0.95rem;
+}
+
+/* Highlight matched search text */
+mark {
+  background: var(--accent-soft);
+  color: inherit;
+  padding: 0 1px;
+  border-radius: 2px;
+}
+
+@media (min-width: 600px) {
+  main {
+    padding: 1.5rem;
+  }
+  .topbar h1 {
+    font-size: 1.6rem;
+  }
+}

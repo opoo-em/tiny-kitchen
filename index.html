@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#c97d4d" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Tiny Kitchen" />
+    <title>Tiny Kitchen</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icons/icon-180.png" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Tiny Kitchen</h1>
+      <p class="subtitle" id="stats"></p>
+    </header>
+
+    <main>
+      <div class="controls">
+        <input
+          id="search"
+          type="search"
+          placeholder="Search ingredients or recipes…"
+          autocomplete="off"
+          autocapitalize="off"
+          autocorrect="off"
+          spellcheck="false"
+        />
+
+        <label class="toggle">
+          <input type="checkbox" id="dairyFreeOnly" checked />
+          <span class="toggle-label">Dairy-free only</span>
+        </label>
+
+        <div class="tags" id="tagFilter" aria-label="Filter by tag"></div>
+      </div>
+
+      <div id="results" class="results"></div>
+      <div id="empty" class="empty" hidden>No recipes match. Try clearing filters.</div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

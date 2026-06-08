@@ -1,0 +1,1096 @@
+{
+  "generated": "2026-06-08T14:16:45.361Z",
+  "recipeCount": 17,
+  "ingredientCount": 59,
+  "tags": [
+    "batch",
+    "breakfast",
+    "contains-dairy",
+    "dairy-free",
+    "freezer-friendly",
+    "iron",
+    "no-bake",
+    "no-cook",
+    "no-cook except steam",
+    "no-sugar-added",
+    "one-pan",
+    "oven",
+    "quick",
+    "snack",
+    "stovetop"
+  ],
+  "recipes": [
+    {
+      "id": "baby-apple-scones",
+      "name": "Baby Apple Scones",
+      "tags": [
+        "oven",
+        "batch",
+        "freezer-friendly",
+        "contains-dairy",
+        "snack"
+      ],
+      "primaryIngredient": "Apples (dried)",
+      "secondaryIngredients": [
+        "Flour",
+        "Sugar (white)",
+        "Butter (unsalted)",
+        "Heavy Cream"
+      ],
+      "category": "Fruit",
+      "source": "ATK Complete Baby & Toddler Cookbook, p. 109 (\"Finger Foods\")",
+      "ingredients": "all-purpose flour (½ cup / 2½ oz), whole-wheat flour (½ cup / 2¾ oz), baking powder (1½ tsp), sugar (2 Tbsp), salt (¼ tsp), unsalted butter (3 Tbsp, chilled and cut into ¼-inch pieces), heavy cream (½ cup), dried apples (½ cup, chopped fine)",
+      "method": "oven 425°F middle rack, parchment-lined baking sheet → process flours + baking powder + sugar + salt ~10 sec → add butter, pulse ~6 times until coarse meal → add cream, pulse 6–8 times until dough forms large clumps → add apples, pulse ~4 times → transfer to lightly floured counter, knead by hand 5–10 sec → pat into 12½×2½-inch rectangle → cut into 5 squares, then each diagonally → 10 triangles → transfer to sheet → refrigerate 10–15 min until chilled → bake 10–12 min until lightly browned, rotating halfway → cool on wire rack ≥10 min",
+      "age": null,
+      "makes": null,
+      "storage": "room temp up to 3 days OR freeze up to 1 month. To serve warm: 300°F 8–10 min.",
+      "notes": "reduced-sugar healthier scone. Dried apples avoid excess moisture from fresh.",
+      "spiceItUp": null,
+      "serveWith": null,
+      "familyTip": null,
+      "extras": [
+        "makes 10 small scones, 45 min + cooling"
+      ]
+    },
+    {
+      "id": "brown-rice-balls-with-spinach-and-edamame",
+      "name": "Brown Rice Balls with Spinach and Edamame",
+      "tags": [
+        "stovetop",
+        "batch",
+        "freezer-friendly",
+        "iron",
+        "dairy-free"
+      ],
+      "primaryIngredient": "Spinach",
+      "secondaryIngredients": [
+        "Chickpeas",
+        "Rice (white / brown)",
+        "Edamame (frozen, shelled)",
+        "Scallion",
+        "Fresh Ginger",
+        "Sesame Oil (toasted)",
+        "Nori",
+        "Curry Powder",
+        "Cilantro (fresh)"
+      ],
+      "category": "Veg",
+      "source": "ATK Complete Baby & Toddler Cookbook, p. 98–99 (\"Finger Foods\")",
+      "ingredients": "water (1 cup), short-grain brown rice (½ cup), baby spinach (½ cup), frozen shelled edamame (⅓ cup, thawed and patted dry), scallion (1, sliced thin), nori sheet (1 × 8×7.5-inch, crumbled, optional), toasted sesame oil (2 tsp), grated fresh ginger (½ tsp, or sub ¼ tsp ground), salt (⅛ tsp)",
+      "method": "boil water + rice → cover, simmer low 30–35 min until tender → off heat, towel under lid, rest 10 min → pulse spinach + edamame + scallion + nori + sesame oil + ginger + salt in food processor ~12 pulses until finely ground (not smooth) → add rice, pulse ~8 more times until rice coarsely chopped → divide into 12 portions (~1½ Tbsp each), roll with lightly moistened hands",
+      "age": null,
+      "makes": null,
+      "storage": "refrigerate up to 3 days OR freeze up to 1 month",
+      "notes": "inspired by Japanese onigiri but food-processor shortcut. Short-grain brown rice for cohesion.",
+      "spiceItUp": null,
+      "serveWith": "low-sodium soy sauce for dipping OR squeeze of fresh lemon/lime",
+      "familyTip": null,
+      "extras": [
+        "makes 12 balls, 1 hour total time"
+      ]
+    },
+    {
+      "id": "cheesy-rigatoni",
+      "name": "Cheesy Rigatoni",
+      "tags": [
+        "stovetop",
+        "quick",
+        "one-pan",
+        "contains-dairy"
+      ],
+      "primaryIngredient": "Pasta",
+      "secondaryIngredients": [
+        "Lemon (juice)",
+        "Basil (fresh)",
+        "Butter (unsalted)",
+        "Parmesan"
+      ],
+      "category": "Starches",
+      "source": "ATK Complete Baby & Toddler Cookbook, p. 100–101 (\"Finger Foods\")",
+      "ingredients": "water (2¼ cups), rigatoni (1 cup), unsalted butter (1 Tbsp), salt (⅛ tsp), grated Parmesan cheese (¼ cup)",
+      "method": "bring water + rigatoni + butter + salt to vigorous simmer in 10-inch skillet medium-high → cook stirring frequently 14–16 min until pasta tender and almost all liquid evaporated → off heat, sprinkle Parmesan over → cover, rest 5 min → uncover, stir to emulsify",
+      "age": null,
+      "makes": null,
+      "storage": null,
+      "notes": "must add Parmesan OFF heat. Use exactly a 10-inch skillet (ratio matters). Avoid pre-shredded Parmesan.",
+      "spiceItUp": null,
+      "serveWith": null,
+      "familyTip": null,
+      "extras": [
+        "makes about 1½ cups, 30 min total time"
+      ]
+    },
+    {
+      "id": "chicken-carrot-and-brown-rice",
+      "name": "Chicken, Carrot, and Brown Rice",
+      "tags": [
+        "stovetop",
+        "one-pan",
+        "batch",
+        "freezer-friendly",
+        "iron",
+        "dairy-free"
+      ],
+      "primaryIngredient": "Chicken Thighs (boneless skinless)",
+      "secondaryIngredients": [
+        "Rice (white / brown)",
+        "Carrots"
+      ],
+      "category": "Proteins",
+      "source": "ATK Complete Baby & Toddler Cookbook, p. 67 (\"Adventurous Combinations\")",
+      "ingredients": "water (2½ cups), boneless skinless chicken thighs (2 × 3-oz, trimmed, cut into 1-inch pieces), carrots (3, 8 oz, peeled, cut into 1-inch pieces), long-grain brown rice (⅓ cup)",
+      "method": "boil everything → cover, simmer medium-low ~40 min until very tender → potato-masher to porridge consistency, ~1 min → thin with water (or breast milk/formula) if needed",
+      "age": null,
+      "makes": null,
+      "storage": null,
+      "notes": "brown rice picked for nutrient density (vs. white); thighs picked to handle the 40-min simmer without drying",
+      "spiceItUp": "1 tsp dried thyme with chicken in step 1, OR 1 Tbsp chopped fresh parsley before mashing",
+      "serveWith": null,
+      "familyTip": null,
+      "extras": [
+        "makes ~2½ cups, 55 min total time"
+      ]
+    },
+    {
+      "id": "french-toast-fingers-with-quick-berry-syrup",
+      "name": "French Toast Fingers with Quick Berry Syrup",
+      "tags": [
+        "stovetop",
+        "quick",
+        "breakfast"
+      ],
+      "primaryIngredient": "Bread",
+      "secondaryIngredients": [
+        "Coconut Milk (canned, regular or light)",
+        "Flaxseed (ground)",
+        "Ground Cinnamon",
+        "Vanilla Extract"
+      ],
+      "category": "Starches",
+      "source": "The Plant-Based Baby, p. 222",
+      "ingredients": "thick-sliced day-old bread (5 slices, cut into wide strips), canned coconut milk (1 cup), ground flaxseed (1 Tbsp), vanilla (1 tsp), cinnamon (1 tsp), coconut oil or nondairy butter for pan; serve with Quick Berry Syrup",
+      "method": "whisk milk + flax + vanilla + cinnamon, rest 5 min → dip bread strips → pan-fry 1–2 min per side until golden",
+      "age": null,
+      "makes": null,
+      "storage": null,
+      "notes": "use thick sturdy bread; flax acts as egg replacer/binder",
+      "spiceItUp": null,
+      "serveWith": null,
+      "familyTip": null,
+      "extras": [
+        "makes 15–20 fingers"
+      ]
+    },
+    {
+      "id": "frittata-bites",
+      "name": "Frittata Bites",
+      "tags": [
+        "oven",
+        "batch",
+        "contains-dairy",
+        "iron"
+      ],
+      "primaryIngredient": "Eggs",
+      "secondaryIngredients": [
+        "Potato",
+        "Shallots",
+        "Half-and-Half",
+        "Parmesan"
+      ],
+      "category": "Proteins",
+      "source": "ATK Complete Baby & Toddler Cookbook, p. TBD",
+      "ingredients": "large eggs (4), half-and-half (2 Tbsp), salt (pinch), extra-virgin olive oil (2 tsp), small Yukon Gold potato (1, 6 oz, peeled, quartered lengthwise, sliced thin), shallot (1, chopped), grated Parmesan (2 Tbsp)",
+      "method": "oven 425°F → spray 6-cup muffin tin → whisk eggs + half-and-half + salt, set aside → in 10-inch nonstick skillet, heat oil medium, add potato + shallot + salt, cover, medium-low 10–12 min until potato tender → cool 2 min, stir in Parmesan → divide potato mix among 6 muffin cups → distribute egg mixture over → bake 8–10 min until lightly puffed and set → cool on wire rack 10 min, run butter knife around edges, lift out",
+      "age": null,
+      "makes": null,
+      "storage": "airtight container, refrigerate up to 24 hrs",
+      "notes": null,
+      "spiceItUp": null,
+      "serveWith": null,
+      "familyTip": null,
+      "extras": [
+        "makes 6 mini frittatas, 45 min total time"
+      ]
+    },
+    {
+      "id": "glazed-tofu-sticks",
+      "name": "Glazed Tofu Sticks",
+      "tags": [
+        "stovetop",
+        "dairy-free"
+      ],
+      "primaryIngredient": "Tofu (firm)",
+      "secondaryIngredients": [
+        "Carrots",
+        "Berries",
+        "Mango",
+        "Lemon (juice)",
+        "Chia Seeds",
+        "Soy Sauce (low-sodium)",
+        "Maple Syrup",
+        "Ground Ginger"
+      ],
+      "category": "Proteins",
+      "source": "ATK Complete Baby & Toddler Cookbook, p. TBD",
+      "ingredients": "firm tofu (2 × 1-inch-thick slabs from 14-oz block, sliced into 6 sticks), low-sodium soy sauce (1½ tsp), maple syrup (1½ tsp), lemon juice (1 tsp), ground ginger (⅛ tsp), canola oil (1 tsp)",
+      "method": "slice tofu into 6 sticks → drain on paper towels 20 min, press dry → mix soy + maple + lemon + ginger in small bowl → heat oil in 8-inch nonstick skillet medium-high → cook tofu golden + crisp on all 4 sides, ~2 min per side → off heat, add sauce, gently toss to coat",
+      "age": null,
+      "makes": null,
+      "storage": "refrigerate up to 2 days, serve room temp or microwave 15 sec",
+      "notes": "crispy outside, moist inside, light sweet-savory-tangy glaze.",
+      "spiceItUp": null,
+      "serveWith": null,
+      "familyTip": null,
+      "extras": [
+        "makes 6 sticks, 40 min total time"
+      ]
+    },
+    {
+      "id": "mini-meatballs",
+      "name": "Mini Meatballs",
+      "tags": [
+        "oven",
+        "batch",
+        "freezer-friendly",
+        "iron",
+        "contains-dairy"
+      ],
+      "primaryIngredient": "Ground Beef",
+      "secondaryIngredients": [
+        "Eggs",
+        "Bread",
+        "Onion",
+        "Garlic",
+        "Parsley (fresh)",
+        "Milk (whole)",
+        "Parmesan"
+      ],
+      "category": "Proteins",
+      "source": "ATK Complete Baby & Toddler Cookbook, p. 103 (\"Finger Foods\")",
+      "ingredients": "hearty white sandwich bread (2 slices, crusts removed, torn into 1-inch pieces), whole milk (¼ cup), extra-virgin olive oil (1 Tbsp), small onion (1, chopped fine), salt (½ tsp), garlic cloves (2, minced), dried oregano (1 tsp), grated Parmesan (1 oz / ½ cup), large egg (1, lightly beaten), minced fresh parsley (2 Tbsp), lean ground beef (1 lb, 85% lean)",
+      "method": "oven 450°F upper-middle rack, foil-lined sheet pan, spray with oil → mash bread + milk with fork to smooth paste → heat oil in 10-inch skillet medium, cook onion + salt 5–7 min until softened and lightly browned → add garlic + oregano, cook 30 sec until fragrant → transfer onion mix to bread bowl → stir in Parmesan + egg + parsley → add beef, gently mix → divide into 24 portions (~1½ Tbsp each), roll → arrange on sheet → bake 18–20 min, rotating sheet halfway",
+      "age": null,
+      "makes": null,
+      "storage": "refrigerate up to 3 days OR freeze up to 1 month. Reheat at 400°F until sizzling ~15 min.",
+      "notes": "panade (bread+milk paste) keeps meatballs moist. Designed as finger food. *Big iron win — 85% lean beef is one of the densest heme iron sources for Baby.*",
+      "spiceItUp": null,
+      "serveWith": "Hand-Squished Roasted Tomato Sauce (p. 213) OR plain",
+      "familyTip": null,
+      "extras": [
+        "makes 24 meatballs, 45 min total time"
+      ]
+    },
+    {
+      "id": "pbj-s-blender-bean-muffins",
+      "name": "PBJ's Blender Bean Muffins",
+      "tags": [
+        "oven",
+        "freezer-friendly",
+        "batch",
+        "iron",
+        "breakfast",
+        "snack"
+      ],
+      "primaryIngredient": "Chickpeas",
+      "secondaryIngredients": [
+        "Oats",
+        "Kale",
+        "Banana",
+        "Nut & Seed Butters (sunflower, almond, etc.)",
+        "Soy Milk (unsweetened)",
+        "Ground Cinnamon",
+        "Vanilla Extract"
+      ],
+      "category": "Proteins",
+      "source": "The Plant-Based Baby, p. 206",
+      "ingredients": "rolled oats (⅔ cup), canned chickpeas (15 oz, drained + rinsed), overripe banana (1 medium), sunflower seed butter (¼ cup), kale (1 cup loosely chopped), unsweetened soy milk (½ cup), cinnamon (¼ tsp), vanilla (1 tsp), baking powder (1 tsp)",
+      "method": "process oats to flour → add everything → blend → fill cups → bake 350°F, 20 min",
+      "age": null,
+      "makes": null,
+      "storage": null,
+      "notes": "palmar-grasp-friendly, naturally sweetened, iron + protein dense.",
+      "spiceItUp": null,
+      "serveWith": null,
+      "familyTip": null,
+      "extras": [
+        "makes 12 mini muffins"
+      ]
+    },
+    {
+      "id": "quick-berry-syrup",
+      "name": "Quick Berry Syrup",
+      "tags": [
+        "stovetop",
+        "quick",
+        "no-sugar-added"
+      ],
+      "primaryIngredient": "Berries",
+      "secondaryIngredients": [
+        "Ground Cinnamon",
+        "Vanilla Extract"
+      ],
+      "category": "Fruit",
+      "source": "The Plant-Based Baby, p. 223",
+      "ingredients": "frozen berries (2 cups, slightly thawed), water (⅓ cup), cinnamon (½ tsp), vanilla (½ tsp)",
+      "method": "combine in saucepan, bring to boil, smash large berries gently, simmer ~10 min until thick",
+      "age": null,
+      "makes": null,
+      "storage": null,
+      "notes": "\"syrup without the sugar\" — designed as dip for French Toast Fingers; works on pancakes, oatmeal, yogurt",
+      "spiceItUp": null,
+      "serveWith": null,
+      "familyTip": null,
+      "extras": [
+        "makes 1 cup syrup"
+      ]
+    },
+    {
+      "id": "raw-fruit-and-nut-bars",
+      "name": "Raw Fruit and Nut Bars",
+      "tags": [
+        "no-cook",
+        "no-bake",
+        "batch",
+        "snack",
+        "dairy-free"
+      ],
+      "primaryIngredient": "Dried Fruit (cherries / apricots / cranberries / dates / raisins)",
+      "secondaryIngredients": [
+        "Almonds (raw, whole)",
+        "Ground Cinnamon"
+      ],
+      "category": "Fruit",
+      "source": "ATK Complete Baby & Toddler Cookbook, p. 111 (\"Finger Foods\")",
+      "ingredients": "hot water (1 cup), dried cherries OR apricots OR cranberries (¾ cup, or mix of 2–3), pitted dates (3 oz / ½ cup, chopped), raw whole almonds (1 cup), ground cinnamon (¼ tsp), salt (¼ tsp)",
+      "method": "line 8½×4½-inch loaf pan with plastic wrap (excess hanging over) → combine water + cherries + dates, let soften 5–10 min → drain well, pat dry → process almonds + cinnamon + salt ~20 sec until finely ground → add drained fruit, pulse 15–20 times until very finely chopped and mixture starts to clump → transfer to pan, spread even, fold plastic over, press flat → refrigerate ~1 hour until firm → slice in half lengthwise, then each half crosswise into 6 pieces → 12 bars",
+      "age": null,
+      "makes": null,
+      "storage": "refrigerate up to 1 week",
+      "notes": "homemade alternative to Larabar / commercial fruit-and-nut bars. **Dairy-free, no-bake, naturally sweetened.** Save the dried fruit choice for what's on sale / on hand.",
+      "spiceItUp": null,
+      "serveWith": null,
+      "familyTip": null,
+      "extras": [
+        "makes 12 small bars, 15 min + 1 hr chilling"
+      ]
+    },
+    {
+      "id": "red-lentil-carrot-and-coconut-milk",
+      "name": "Red Lentil, Carrot, and Coconut Milk",
+      "tags": [
+        "stovetop",
+        "quick",
+        "one-pan",
+        "batch",
+        "freezer-friendly",
+        "iron",
+        "dairy-free"
+      ],
+      "primaryIngredient": "Lentils",
+      "secondaryIngredients": [
+        "Carrots",
+        "Coconut Milk (canned, regular or light)"
+      ],
+      "category": "Proteins",
+      "source": "ATK Complete Baby & Toddler Cookbook, p. 59 (\"Adventurous Combinations\")",
+      "ingredients": "dried red lentils (⅔ cup), carrots (3, 8 oz, peeled, sliced ½-inch thick), water (1¾ cups), unsweetened canned coconut milk (¼ cup)",
+      "method": "boil everything → cover, simmer low 20–25 min until very tender → potato-masher to porridge consistency → thin with water (or breast milk/formula) if needed",
+      "age": null,
+      "makes": null,
+      "storage": null,
+      "notes": "dal-inspired. Red lentils break down soft and pulpy. Second-highest protein-to-calorie ratio of any legume. *Uses red lentils specifically.*",
+      "spiceItUp": "¼ tsp ground ginger OR ¼ tsp ground turmeric with lentils in step 1",
+      "serveWith": null,
+      "familyTip": null,
+      "extras": [
+        "makes ~2½ cups, 35 min total time"
+      ]
+    },
+    {
+      "id": "salmon-pea-and-rice",
+      "name": "Salmon, Pea, and Rice",
+      "tags": [
+        "stovetop",
+        "quick",
+        "one-pan",
+        "batch",
+        "freezer-friendly",
+        "iron",
+        "dairy-free"
+      ],
+      "primaryIngredient": "Salmon (fresh)",
+      "secondaryIngredients": [
+        "Rice (white / brown)",
+        "Peas (frozen)",
+        "Orange (zest + juice)"
+      ],
+      "category": "Proteins",
+      "source": "ATK Complete Baby & Toddler Cookbook, p. 75 (\"Adventurous Combinations\")",
+      "ingredients": "long-grain white rice (⅓ cup, rinsed), water (1¾ cups), grated orange zest (¼ tsp) + juice (2 Tbsp), skinless salmon fillet (1 × 6-oz, cut into 1-inch pieces), frozen peas (⅓ cup)",
+      "method": "boil rice + water + orange juice → cover, simmer low 10 min → add salmon + peas, simmer 6–8 min until very tender → off heat, add orange zest, potato-masher to porridge, ~1 min → thin if needed",
+      "age": null,
+      "makes": null,
+      "storage": null,
+      "notes": "**DO NOT blender — rice goes gummy.** Stick with potato masher. Orange is the surprise flavor anchor.",
+      "spiceItUp": "2 tsp fresh mint OR 1 tsp fresh tarragon, added with orange zest",
+      "serveWith": null,
+      "familyTip": null,
+      "extras": [
+        "makes ~2¼ cups, 30 min total time"
+      ]
+    },
+    {
+      "id": "savory-oatcakes",
+      "name": "Savory Oatcakes",
+      "tags": [
+        "oven",
+        "batch",
+        "contains-dairy",
+        "snack"
+      ],
+      "primaryIngredient": "Oats",
+      "secondaryIngredients": [
+        "Flour",
+        "Sugar (white)",
+        "Butter (unsalted)"
+      ],
+      "category": "Starches",
+      "source": "ATK Complete Baby & Toddler Cookbook, p. 105 (\"Finger Foods\")",
+      "ingredients": "water (⅓ cup), unsalted butter (3 Tbsp, melted and cooled), quick oats (1 cup / 3 oz), all-purpose flour (⅓ cup / 1⅔ oz), sugar (2 tsp), baking powder (¾ tsp), salt (½ tsp)",
+      "method": "oven 350°F middle rack, parchment-lined baking sheet → whisk water + melted butter → whisk oats + flour + sugar + baking powder + salt → combine wet + dry, stir until well combined (sticky) → rest dough 10 min → scrape onto floured counter, pat into 8-inch circle, ¼ inch thick → cut 12 rounds with 2-inch biscuit cutter (gather and re-press scraps) → transfer to sheet → bake ~25 min until golden brown, rotating halfway → cool on sheet on wire rack ~30 min",
+      "age": null,
+      "makes": null,
+      "storage": "room temp up to 1 week",
+      "notes": "traditional Scottish biscuits. Quick oats are already broken down, no food processor needed.",
+      "spiceItUp": null,
+      "serveWith": null,
+      "familyTip": null,
+      "extras": [
+        "makes 12 small oatcakes, 45 min + cooling"
+      ]
+    },
+    {
+      "id": "sunshine-bowl",
+      "name": "Sunshine Bowl",
+      "tags": [
+        "batch",
+        "freezer-friendly",
+        "iron",
+        "no-cook except steam"
+      ],
+      "primaryIngredient": "Tofu (silken)",
+      "secondaryIngredients": [],
+      "category": "Proteins",
+      "source": "The Plant-Based Baby, p. 102",
+      "ingredients": "silken tofu (½ cup, drained), carrots (¼ cup steamed ~10 min), strawberries (¼ cup fresh or thawed), mango chunks (¼ cup), chia seeds (1 tsp)",
+      "method": "steam carrots ~10 min; blend everything to puree",
+      "age": null,
+      "makes": null,
+      "storage": null,
+      "notes": null,
+      "spiceItUp": null,
+      "serveWith": null,
+      "familyTip": "top with nuts, seeds, extra fruit",
+      "extras": [
+        "makes 8 × 1-oz servings — ice-cube-tray freezer friendly"
+      ]
+    },
+    {
+      "id": "tiny-carrot-muffins",
+      "name": "Tiny Carrot Muffins",
+      "tags": [
+        "oven",
+        "batch",
+        "freezer-friendly",
+        "dairy-free"
+      ],
+      "primaryIngredient": "Carrots",
+      "secondaryIngredients": [
+        "Eggs",
+        "Flour",
+        "Dried Fruit (cherries / apricots / cranberries / dates / raisins)",
+        "Brown Sugar (light or dark, packed)",
+        "Ground Ginger",
+        "Ground Cinnamon",
+        "Vanilla Extract",
+        "Yogurt (plain)"
+      ],
+      "category": "Veg",
+      "source": "ATK Complete Baby & Toddler Cookbook, p. 107 (\"Finger Foods\")",
+      "ingredients": "flour (1 cup / 5½ oz — recipe calls for whole-wheat; uses all-purpose), baking powder (¾ tsp), baking soda (½ tsp), ground cinnamon (½ tsp), ground ginger (½ tsp), salt (¼ tsp), plain yogurt (½ cup — uses Forager), packed brown sugar (⅓ cup / 2⅓ oz), canola oil (¼ cup), large eggs (2), vanilla extract (½ tsp), shredded carrots (1 cup / 2 small carrots)",
+      "method": "oven 375°F middle rack → grease 24-cup mini muffin tin → whisk dry (flour + baking powder + baking soda + cinnamon + ginger + salt) → whisk wet (yogurt + sugar + oil + eggs + vanilla) → stir carrots into wet until incorporated → add dry, stir just until combined → divide batter (~1 heaping Tbsp per cup) → bake 10–12 min until toothpick clean → cool in tin on rack 10 min, then on rack ~30 min",
+      "age": null,
+      "makes": null,
+      "storage": "room temp up to 3 days OR freeze up to 1 month. To serve warm: 300°F 8–10 min.",
+      "notes": "carrots are 88% water → contribute fluffy texture. Standing subs (yogurt → Forager, flour → all-purpose) make this dairy-free without thought.",
+      "spiceItUp": null,
+      "serveWith": null,
+      "familyTip": null,
+      "extras": [
+        "makes 24 mini muffins, 40 min + cooling"
+      ]
+    },
+    {
+      "id": "zucchini-carrot-fritters",
+      "name": "Zucchini-Carrot Fritters",
+      "tags": [
+        "stovetop",
+        "dairy-free"
+      ],
+      "primaryIngredient": "Zucchini",
+      "secondaryIngredients": [
+        "Eggs",
+        "Flour",
+        "Carrots",
+        "Basil (fresh)",
+        "Dill (fresh)",
+        "Parmesan",
+        "Feta"
+      ],
+      "category": "Veg",
+      "source": "ATK Complete Baby & Toddler Cookbook, p. 88–89 (\"Finger Foods\")",
+      "ingredients": "zucchini (1 small, shredded, ~1 cup), carrots (2 small, peeled and shredded, ~1 cup), salt (¼ tsp), large egg (1, lightly beaten), all-purpose flour (2 Tbsp), extra-virgin olive oil (1 Tbsp)",
+      "method": "toss zucchini + carrots with salt, drain 10 min in fine-mesh strainer over bowl → wrap in clean dish towel, squeeze out as much liquid as possible → mix with egg → sprinkle flour, stir → heat oil in 12-inch nonstick skillet medium → drop 2-Tbsp portions, press into 2-inch fritters → cook 3 min per side until golden brown → drain on paper towels",
+      "age": null,
+      "makes": null,
+      "storage": "refrigerate up to 24 hrs",
+      "notes": "shredding + squeezing is essential for non-soggy fritters.",
+      "spiceItUp": null,
+      "serveWith": null,
+      "familyTip": null,
+      "extras": [
+        "makes 6 fritters, 35 min total time"
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "name": "Almonds (raw, whole)",
+      "tags": [],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "raw-fruit-and-nut-bars"
+      ]
+    },
+    {
+      "name": "Apples (dried)",
+      "tags": [],
+      "category": "Fruit",
+      "recipeIds": [
+        "baby-apple-scones"
+      ]
+    },
+    {
+      "name": "Banana",
+      "tags": [],
+      "category": "Fruit",
+      "recipeIds": [
+        "pbj-s-blender-bean-muffins"
+      ]
+    },
+    {
+      "name": "Basil (fresh)",
+      "tags": [],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "cheesy-rigatoni",
+        "zucchini-carrot-fritters"
+      ]
+    },
+    {
+      "name": "Berries",
+      "tags": [],
+      "category": "Fruit",
+      "recipeIds": [
+        "glazed-tofu-sticks",
+        "quick-berry-syrup"
+      ]
+    },
+    {
+      "name": "Bread",
+      "tags": [],
+      "category": "Starches",
+      "recipeIds": [
+        "french-toast-fingers-with-quick-berry-syrup",
+        "mini-meatballs"
+      ]
+    },
+    {
+      "name": "Brown Sugar (light or dark, packed)",
+      "tags": [],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "tiny-carrot-muffins"
+      ]
+    },
+    {
+      "name": "Butter (unsalted)",
+      "tags": [
+        "DAIRY"
+      ],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "baby-apple-scones",
+        "cheesy-rigatoni",
+        "savory-oatcakes"
+      ]
+    },
+    {
+      "name": "Carrots",
+      "tags": [],
+      "category": "Veg",
+      "recipeIds": [
+        "chicken-carrot-and-brown-rice",
+        "glazed-tofu-sticks",
+        "red-lentil-carrot-and-coconut-milk",
+        "tiny-carrot-muffins",
+        "zucchini-carrot-fritters"
+      ]
+    },
+    {
+      "name": "Chia Seeds",
+      "tags": [],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "glazed-tofu-sticks"
+      ]
+    },
+    {
+      "name": "Chicken Thighs (boneless skinless)",
+      "tags": [
+        "iron"
+      ],
+      "category": "Proteins",
+      "recipeIds": [
+        "chicken-carrot-and-brown-rice"
+      ]
+    },
+    {
+      "name": "Chickpeas",
+      "tags": [
+        "iron"
+      ],
+      "category": "Proteins",
+      "recipeIds": [
+        "brown-rice-balls-with-spinach-and-edamame",
+        "pbj-s-blender-bean-muffins"
+      ]
+    },
+    {
+      "name": "Cilantro (fresh)",
+      "tags": [],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "brown-rice-balls-with-spinach-and-edamame"
+      ]
+    },
+    {
+      "name": "Coconut Milk (canned, regular or light)",
+      "tags": [],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "french-toast-fingers-with-quick-berry-syrup",
+        "red-lentil-carrot-and-coconut-milk"
+      ]
+    },
+    {
+      "name": "Curry Powder",
+      "tags": [],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "brown-rice-balls-with-spinach-and-edamame"
+      ]
+    },
+    {
+      "name": "Dill (fresh)",
+      "tags": [],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "zucchini-carrot-fritters"
+      ]
+    },
+    {
+      "name": "Dried Fruit (cherries / apricots / cranberries / dates / raisins)",
+      "tags": [],
+      "category": "Fruit",
+      "recipeIds": [
+        "raw-fruit-and-nut-bars",
+        "tiny-carrot-muffins"
+      ]
+    },
+    {
+      "name": "Edamame (frozen, shelled)",
+      "tags": [],
+      "category": "Veg",
+      "recipeIds": [
+        "brown-rice-balls-with-spinach-and-edamame"
+      ]
+    },
+    {
+      "name": "Eggs",
+      "tags": [
+        "iron"
+      ],
+      "category": "Proteins",
+      "recipeIds": [
+        "frittata-bites",
+        "mini-meatballs",
+        "tiny-carrot-muffins",
+        "zucchini-carrot-fritters"
+      ]
+    },
+    {
+      "name": "Feta",
+      "tags": [
+        "DAIRY"
+      ],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "zucchini-carrot-fritters"
+      ]
+    },
+    {
+      "name": "Flaxseed (ground)",
+      "tags": [],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "french-toast-fingers-with-quick-berry-syrup"
+      ]
+    },
+    {
+      "name": "Flour",
+      "tags": [],
+      "category": "Starches",
+      "recipeIds": [
+        "baby-apple-scones",
+        "savory-oatcakes",
+        "tiny-carrot-muffins",
+        "zucchini-carrot-fritters"
+      ]
+    },
+    {
+      "name": "Fresh Ginger",
+      "tags": [],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "brown-rice-balls-with-spinach-and-edamame"
+      ]
+    },
+    {
+      "name": "Garlic",
+      "tags": [],
+      "category": "Veg",
+      "recipeIds": [
+        "mini-meatballs"
+      ]
+    },
+    {
+      "name": "Ground Beef",
+      "tags": [
+        "iron"
+      ],
+      "category": "Proteins",
+      "recipeIds": [
+        "mini-meatballs"
+      ]
+    },
+    {
+      "name": "Ground Cinnamon",
+      "tags": [],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "french-toast-fingers-with-quick-berry-syrup",
+        "pbj-s-blender-bean-muffins",
+        "quick-berry-syrup",
+        "raw-fruit-and-nut-bars",
+        "tiny-carrot-muffins"
+      ]
+    },
+    {
+      "name": "Ground Ginger",
+      "tags": [],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "glazed-tofu-sticks",
+        "tiny-carrot-muffins"
+      ]
+    },
+    {
+      "name": "Half-and-Half",
+      "tags": [
+        "DAIRY"
+      ],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "frittata-bites"
+      ]
+    },
+    {
+      "name": "Heavy Cream",
+      "tags": [
+        "DAIRY"
+      ],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "baby-apple-scones"
+      ]
+    },
+    {
+      "name": "Kale",
+      "tags": [],
+      "category": "Veg",
+      "recipeIds": [
+        "pbj-s-blender-bean-muffins"
+      ]
+    },
+    {
+      "name": "Lemon (juice)",
+      "tags": [],
+      "category": "Fruit",
+      "recipeIds": [
+        "cheesy-rigatoni",
+        "glazed-tofu-sticks"
+      ]
+    },
+    {
+      "name": "Lentils",
+      "tags": [
+        "iron"
+      ],
+      "category": "Proteins",
+      "recipeIds": [
+        "red-lentil-carrot-and-coconut-milk"
+      ]
+    },
+    {
+      "name": "Mango",
+      "tags": [],
+      "category": "Fruit",
+      "recipeIds": [
+        "glazed-tofu-sticks"
+      ]
+    },
+    {
+      "name": "Maple Syrup",
+      "tags": [],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "glazed-tofu-sticks"
+      ]
+    },
+    {
+      "name": "Milk (whole)",
+      "tags": [],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "mini-meatballs"
+      ]
+    },
+    {
+      "name": "Nori",
+      "tags": [],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "brown-rice-balls-with-spinach-and-edamame"
+      ]
+    },
+    {
+      "name": "Nut & Seed Butters (sunflower, almond, etc.)",
+      "tags": [],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "pbj-s-blender-bean-muffins"
+      ]
+    },
+    {
+      "name": "Oats",
+      "tags": [],
+      "category": "Starches",
+      "recipeIds": [
+        "pbj-s-blender-bean-muffins",
+        "savory-oatcakes"
+      ]
+    },
+    {
+      "name": "Onion",
+      "tags": [],
+      "category": "Veg",
+      "recipeIds": [
+        "mini-meatballs"
+      ]
+    },
+    {
+      "name": "Orange (zest + juice)",
+      "tags": [],
+      "category": "Fruit",
+      "recipeIds": [
+        "salmon-pea-and-rice"
+      ]
+    },
+    {
+      "name": "Parmesan",
+      "tags": [
+        "DAIRY"
+      ],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "cheesy-rigatoni",
+        "frittata-bites",
+        "mini-meatballs",
+        "zucchini-carrot-fritters"
+      ]
+    },
+    {
+      "name": "Parsley (fresh)",
+      "tags": [],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "mini-meatballs"
+      ]
+    },
+    {
+      "name": "Pasta",
+      "tags": [],
+      "category": "Starches",
+      "recipeIds": [
+        "cheesy-rigatoni"
+      ]
+    },
+    {
+      "name": "Peas (frozen)",
+      "tags": [],
+      "category": "Veg",
+      "recipeIds": [
+        "salmon-pea-and-rice"
+      ]
+    },
+    {
+      "name": "Potato",
+      "tags": [],
+      "category": "Starches",
+      "recipeIds": [
+        "frittata-bites"
+      ]
+    },
+    {
+      "name": "Rice (white / brown)",
+      "tags": [],
+      "category": "Starches",
+      "recipeIds": [
+        "brown-rice-balls-with-spinach-and-edamame",
+        "chicken-carrot-and-brown-rice",
+        "salmon-pea-and-rice"
+      ]
+    },
+    {
+      "name": "Salmon (fresh)",
+      "tags": [
+        "iron"
+      ],
+      "category": "Proteins",
+      "recipeIds": [
+        "salmon-pea-and-rice"
+      ]
+    },
+    {
+      "name": "Scallion",
+      "tags": [],
+      "category": "Veg",
+      "recipeIds": [
+        "brown-rice-balls-with-spinach-and-edamame"
+      ]
+    },
+    {
+      "name": "Sesame Oil (toasted)",
+      "tags": [],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "brown-rice-balls-with-spinach-and-edamame"
+      ]
+    },
+    {
+      "name": "Shallots",
+      "tags": [],
+      "category": "Veg",
+      "recipeIds": [
+        "frittata-bites"
+      ]
+    },
+    {
+      "name": "Soy Milk (unsweetened)",
+      "tags": [],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "pbj-s-blender-bean-muffins"
+      ]
+    },
+    {
+      "name": "Soy Sauce (low-sodium)",
+      "tags": [],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "glazed-tofu-sticks"
+      ]
+    },
+    {
+      "name": "Spinach",
+      "tags": [],
+      "category": "Veg",
+      "recipeIds": [
+        "brown-rice-balls-with-spinach-and-edamame"
+      ]
+    },
+    {
+      "name": "Sugar (white)",
+      "tags": [],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "baby-apple-scones",
+        "savory-oatcakes"
+      ]
+    },
+    {
+      "name": "Tofu (firm)",
+      "tags": [],
+      "category": "Proteins",
+      "recipeIds": [
+        "glazed-tofu-sticks"
+      ]
+    },
+    {
+      "name": "Tofu (silken)",
+      "tags": [],
+      "category": "Proteins",
+      "recipeIds": [
+        "sunshine-bowl"
+      ]
+    },
+    {
+      "name": "Vanilla Extract",
+      "tags": [],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "french-toast-fingers-with-quick-berry-syrup",
+        "pbj-s-blender-bean-muffins",
+        "quick-berry-syrup",
+        "tiny-carrot-muffins"
+      ]
+    },
+    {
+      "name": "Yogurt (plain)",
+      "tags": [],
+      "category": "Pantry / Extras",
+      "recipeIds": [
+        "tiny-carrot-muffins"
+      ]
+    },
+    {
+      "name": "Zucchini",
+      "tags": [],
+      "category": "Veg",
+      "recipeIds": [
+        "zucchini-carrot-fritters"
+      ]
+    }
+  ]
+}
