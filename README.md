@@ -1,32 +1,26 @@
 # Tiny Kitchen
 
-A tiny recipe finder. Search by ingredient, filter by tag, find what to cook.
+A tiny "what do I feed the toddler" instrument. Not a recipe database — a
+decision helper: pick a meal, see a short list of food categories, tap one,
+get the ways to run it. Or let the Deal tab hand you one card at a time.
 
 **Live app:** https://opoo-em.github.io/tiny-kitchen/
 
 ## What this is
 
-A static web app — HTML, CSS, vanilla JavaScript — that lets you search a curated
-list of toddler-and-family recipes by ingredient. Designed for one-handed
-phone use in a real kitchen. Installable as a PWA.
+A static web app — HTML, CSS, vanilla JavaScript, no framework. Installable
+as a PWA, works offline, designed for one-handed kitchen use.
 
-## Stack
+## Architecture
 
-- Vanilla HTML/CSS/JS, no framework
-- Service worker for offline support
-- PWA manifest for home-screen install
-- Hosted on GitHub Pages
+This public repo contains only the app shell. All food data lives in a
+separate private repo as plain markdown; the app fetches it at runtime via
+the GitHub API using a fine-grained read-only token that the owner configures
+on-device. No personal data is ever published here.
 
-## Why it exists
-
-Most recipe sites organize by *recipe.* This one organizes by *ingredient* —
-because the question in front of an open fridge is usually "what can I make
-with chicken thighs," not "I want to make Recipe X."
-
-## Data
-
-`data/recipes.json` is the full recipe database. Generated from a markdown
-source in a separate private repo.
+- `parser.js` — parses the markdown data client-side
+- `app.js` — Browse (cascade) / Deal (one card at a time) / Recipes / Setup
+- `service-worker.js` — offline shell caching
 
 ---
 

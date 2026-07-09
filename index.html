@@ -16,46 +16,51 @@
   <body>
     <header class="topbar">
       <h1>Tiny Kitchen</h1>
-      <p class="subtitle" id="stats"></p>
-      <button id="pickForMe" class="pick-btn" type="button" title="Pick something from the current view">
-        🎲 Pick for me
-      </button>
+      <div class="meal-pills" id="mealPills" role="tablist" aria-label="Meal">
+        <button class="meal-pill" data-meal="breakfast" type="button">🍳 Breakfast</button>
+        <button class="meal-pill" data-meal="main" type="button">🍽️ Main</button>
+        <button class="meal-pill" data-meal="snack" type="button">🍎 Snacks</button>
+      </div>
     </header>
 
     <main>
-      <div class="controls">
-        <input
-          id="search"
-          type="search"
-          placeholder="Search ingredients or recipes…"
-          autocomplete="off"
-          autocapitalize="off"
-          autocorrect="off"
-          spellcheck="false"
-        />
-
-        <label class="toggle">
-          <input type="checkbox" id="dairyFreeOnly" checked />
-          <span class="toggle-label">Dairy-free only</span>
-        </label>
-
-        <div class="segmented" id="contentTypeFilter" role="tablist" aria-label="Content type">
-          <button class="seg-btn active" data-type="all">All</button>
-          <button class="seg-btn" data-type="recipes">Recipes</button>
-          <button class="seg-btn" data-type="ideas">💡 Ideas</button>
+      <section id="view-browse" class="view" hidden></section>
+      <section id="view-deal" class="view" hidden></section>
+      <section id="view-recipes" class="view" hidden>
+        <div class="controls">
+          <input
+            id="search"
+            type="search"
+            placeholder="Search — “chicken” gets ideas first, recipes after…"
+            autocomplete="off"
+            autocapitalize="off"
+            autocorrect="off"
+            spellcheck="false"
+          />
+          <label class="toggle">
+            <input type="checkbox" id="dairyFreeOnly" checked />
+            <span class="toggle-label">Dairy-free only</span>
+          </label>
+          <div class="tags" id="tagFilter" aria-label="Filter by tag"></div>
         </div>
-
-        <div class="tags" id="tagFilter" aria-label="Filter by tag"></div>
-      </div>
-
-      <div id="results" class="results"></div>
-      <div id="empty" class="empty" hidden>
-        <div style="font-size: 2rem; margin-bottom: 0.4rem;">🍳</div>
-        Nothing found.<br/>
-        <small>Try clearing the search, switching tabs, or toggling dairy-free off.</small>
-      </div>
+        <div id="results" class="results"></div>
+        <div id="empty" class="empty" hidden>
+          <div style="font-size: 2rem; margin-bottom: 0.4rem;">🍳</div>
+          Nothing found.<br />
+          <small>Try clearing the search or toggling dairy-free off.</small>
+        </div>
+      </section>
+      <section id="view-setup" class="view" hidden></section>
     </main>
 
+    <nav class="tabbar" id="tabbar" aria-label="Tiny Kitchen sections">
+      <button class="tab" data-tab="browse" type="button"><span class="tab-icon">🥣</span>Browse</button>
+      <button class="tab" data-tab="deal" type="button"><span class="tab-icon">🎲</span>Deal</button>
+      <button class="tab" data-tab="recipes" type="button"><span class="tab-icon">📖</span>Recipes</button>
+      <button class="tab" data-tab="setup" type="button"><span class="tab-icon">⚙️</span>Setup</button>
+    </nav>
+
+    <script src="parser.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
