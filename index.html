@@ -15,7 +15,9 @@
   </head>
   <body>
     <header class="topbar">
+      <button id="scratchBtn" class="topbar-btn left" type="button" title="Tell Claude later — scratch note, stays on this phone">✍️</button>
       <h1>Tiny Kitchen</h1>
+      <button id="sosBtn" class="topbar-btn right" type="button" title="He won't eat anything — break glass">🧯</button>
       <div class="meal-pills" id="mealPills" role="tablist" aria-label="Meal">
         <button class="meal-pill" data-meal="breakfast" type="button">🍳 Breakfast</button>
         <button class="meal-pill" data-meal="main" type="button">🍽️ Main</button>
@@ -59,6 +61,29 @@
       <button class="tab" data-tab="recipes" type="button"><span class="tab-icon">📖</span>Recipes</button>
       <button class="tab" data-tab="setup" type="button"><span class="tab-icon">⚙️</span>Setup</button>
     </nav>
+
+    <div id="sosModal" class="sheet-modal" hidden>
+      <div class="sheet-backdrop"></div>
+      <div class="sheet" role="dialog" aria-label="He won't eat anything">
+        <div id="sosContent"></div>
+        <button id="sosClose" class="sheet-close" type="button">Okay 💙</button>
+      </div>
+    </div>
+
+    <div id="scratchModal" class="sheet-modal" hidden>
+      <div class="sheet-backdrop"></div>
+      <div class="sheet" role="dialog" aria-label="Tell Claude later">
+        <h2 class="sos-title">Tell Claude later ✍️</h2>
+        <p class="sos-note">Discoveries, likes, rejections, ideas. Lives only on this
+        phone — empty it at him next time you talk.</p>
+        <textarea id="scratchText" class="scratch-text" rows="8"
+          placeholder="e.g. loved the corn fritters, threw the dal (Pepper approved)…"></textarea>
+        <div class="sheet-row">
+          <button id="scratchClear" class="setup-minor danger" type="button">Clear</button>
+          <button id="scratchClose" class="sheet-close" type="button">Done 💙</button>
+        </div>
+      </div>
+    </div>
 
     <script src="parser.js"></script>
     <script src="app.js"></script>

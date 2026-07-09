@@ -39,6 +39,8 @@ const KEYS = {
   remote: 'tk_remote', // { owner, repo, branch, token }
   cache: 'tk_cache', // { menuMd, recipesMd, fetchedAt }
   served: 'tk_served', // [ { riff, baseId, ts } ] newest-first, capped
+  trials: 'tk_trials', // { [riffText]: { tried: [ts…], liked: [ts…] } } — no misses, ever
+  scratch: 'tk_scratch', // string — "tell Claude later" note, lives only on this phone
 };
 
 // --- State ----------------------------------------------------------------
@@ -99,6 +101,31 @@ function agoLabel(ts) {
   return null; // older than a week: don't clutter
 }
 
+// --- Test-queue trials ------------------------------------------------------
+// Design rule (Em, July 9): there is NO miss button. One refusal means nothing
+// (see: the tandoori apples). "Tried" and "liked" are quiet counters with
+// dates; nothing ever auto-promotes to confirmed — that's Em's call, in the file.
+
+function trialsMap() {
+  return LS.get(KEYS.trials, {});
+}
+
+function trialFor(riffText) {
+  return trialsMap()[riffText] || { tried: [], liked: [] };
+}
+
+function toggleTrial(riffText, kind) {
+  const m = trialsMap();
+  const rec = m[riffText] || { tried: [], liked: [] };
+  const today = new Date().toDateString();
+  const idx = rec[kind].findIndex((ts) => new Date(ts).toDateString() === today);
+  if (idx >= 0) rec[kind].splice(idx, 1); // tap again same day = undo
+  else rec[kind].unshift(Date.now());
+  rec[kind] = rec[kind].slice(0, 50);
+  m[riffText] = rec;
+  LS.set(KEYS.trials, m);
+}
+
 // --- Data loading ---------------------------------------------------------
 
 const REMOTE_PATHS = {
@@ -130,6 +157,7 @@ function parseIntoData(menuMd, recipesMd) {
   return {
     meals: menu.meals,
     boosters: menu.boosters,
+    breakglass: menu.breakglass || null,
     recipes: rec.recipes,
     ingredients: rec.ingredients,
     recipeTags: rec.tags,
@@ -207,19 +235,55 @@ function boosterById(id) {
 }
 
 const ironDot = '<span class="iron-dot" title="iron">●</span>';
+const confirmedCheck = '<span class="confirmed-check" title="confirmed — a known hit">✓</span>';
 
 // --- Shared: riff rows + booster chips (used by Browse and Deal) -----------
+
+function riffBadges(riff, base) {
+  const iron = riff.tags.includes('iron') ? ' ' + ironDot : '';
+  const freezer = riff.tags.includes('freezer') ? ' <span class="mini-tag">❄️</span>' : '';
+  const confirmed =
+    riff.tags.includes('confirmed') || (base.tags.includes('confirmed') && !riff.tags.includes('test'))
+      ? ' ' + confirmedCheck
+      : '';
+  return iron + freezer + confirmed;
+}
+
+function isTestRiff(riff, base) {
+  if (riff.tags.includes('confirmed')) return false;
+  return riff.tags.includes('test') || base.tags.includes('test');
+}
 
 function riffRowsHtml(base) {
   return base.riffs
     .map((riff) => {
+      const badges = riffBadges(riff, base);
+
+      if (isTestRiff(riff, base)) {
+        const t = trialFor(riff.text);
+        return `
+        <div class="riff-row test">
+          <div class="riff-text"><span class="mini-tag" title="on the test queue — never tried (or due a re-try)">🧪</span> ${escapeHtml(riff.text)}${badges}</div>
+          <div class="trial-btns">
+            <button class="trial-btn${t.tried.length ? ' has' : ''}" type="button"
+                    data-riff="${escapeHtml(riff.text)}" data-kind="tried"
+                    title="He tried it (tap again today to undo). There is no miss button — refusal isn't rejection.">
+              ${t.tried.length ? `tried ×${t.tried.length}` : 'tried?'}
+            </button>
+            <button class="trial-btn like${t.liked.length ? ' has' : ''}" type="button"
+                    data-riff="${escapeHtml(riff.text)}" data-kind="liked"
+                    title="He liked it! Counts add up; nothing auto-promotes — you decide when it's confirmed.">
+              ${t.liked.length ? `💚 ×${t.liked.length}` : '💚'}
+            </button>
+          </div>
+        </div>`;
+      }
+
       const ts = riffServedAt(riff.text);
       const ago = ts ? agoLabel(ts) : null;
-      const iron = riff.tags.includes('iron') ? ' ' + ironDot : '';
-      const freezer = riff.tags.includes('freezer') ? ' <span class="mini-tag">❄️</span>' : '';
       return `
         <div class="riff-row">
-          <div class="riff-text">${escapeHtml(riff.text)}${iron}${freezer}</div>
+          <div class="riff-text">${escapeHtml(riff.text)}${badges}</div>
           <button class="served-btn${ago ? ' served' : ''}" type="button"
                   data-riff="${escapeHtml(riff.text)}" data-base="${base.id}"
                   title="Mark as served">
@@ -252,6 +316,13 @@ function wireServedButtons(container) {
       render();
     });
   });
+  container.querySelectorAll('.trial-btn').forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleTrial(btn.dataset.riff, btn.dataset.kind);
+      render();
+    });
+  });
 }
 
 // --- Browse (the cascade) ---------------------------------------------------
@@ -266,6 +337,8 @@ function renderBrowse(el) {
       const open = state.openBaseId === base.id;
       const iron = base.tags.includes('iron') ? ' ' + ironDot : '';
       const freezer = base.tags.includes('freezer') ? ' <span class="mini-tag">❄️</span>' : '';
+      const flask = base.tags.includes('test') ? ' <span class="mini-tag" title="test queue — never tried">🧪</span>' : '';
+      const check = base.tags.includes('confirmed') ? ' ' + confirmedCheck : '';
       const details = open
         ? `<div class="base-details">
              ${base.note ? `<p class="base-note">${escapeHtml(base.note)}</p>` : ''}
@@ -277,7 +350,7 @@ function renderBrowse(el) {
         <article class="base${open ? ' open' : ''}" data-base="${base.id}">
           <button class="base-header" type="button" aria-expanded="${open}">
             <span class="base-emoji">${base.emoji || '🍽️'}</span>
-            <span class="base-name">${escapeHtml(base.name)}${iron}${freezer}</span>
+            <span class="base-name">${escapeHtml(base.name)}${iron}${freezer}${flask}${check}</span>
             <span class="base-count">${base.riffs.length}</span>
             <span class="caret">›</span>
           </button>
@@ -332,6 +405,7 @@ function renderDeal(el) {
   if (!base) { state.deal = newDeck(); return renderDeal(el); }
 
   const iron = base.tags.includes('iron') ? ' ' + ironDot : '';
+  const dealFlask = base.tags.includes('test') ? ' <span class="mini-tag" title="test queue">🧪</span>' : '';
   const loopNote = deal.looped && deal.idx === 0
     ? `<p class="deal-loop-note">That was the whole deck — going around again.</p>` : '';
 
@@ -340,7 +414,7 @@ function renderDeal(el) {
       ${loopNote}
       <div class="deal-card">
         <div class="deal-emoji">${base.emoji || '🍽️'}</div>
-        <div class="deal-name">${escapeHtml(base.name)}${iron}</div>
+        <div class="deal-name">${escapeHtml(base.name)}${iron}${dealFlask}</div>
         <div class="deal-sub">${base.riffs.length} ways to run it</div>
         <div class="deal-actions">
           <button class="deal-no" type="button">Not today</button>
@@ -621,6 +695,63 @@ function renderSetup(el) {
   });
 }
 
+// --- Break glass (he won't eat anything) -------------------------------------
+// Content comes from the "## Break glass" section of menu.md; falls back to
+// the goldens base if the section is missing. Calm by design: this screen is
+// for the single worst minute of the day.
+
+function breakglassContent() {
+  if (state.data && state.data.breakglass && state.data.breakglass.items.length) {
+    return state.data.breakglass;
+  }
+  // Fallback: find a base named like "goldens" anywhere.
+  if (state.data) {
+    for (const meal of state.data.meals) {
+      const base = meal.bases.find((b) => b.name.toLowerCase().includes('golden'));
+      if (base) {
+        return {
+          note: base.note || '',
+          items: base.riffs.map((r) => ({ text: r.text, tags: r.tags })),
+        };
+      }
+    }
+  }
+  return null;
+}
+
+function openSos() {
+  const bg = breakglassContent();
+  const content = $('#sosContent');
+  if (!bg) {
+    content.innerHTML = '<p class="sos-note">No data connected yet — head to ⚙️ Setup.</p>';
+  } else {
+    const rows = bg.items
+      .map((item) => {
+        const rescue = /^rescue/i.test(item.text);
+        const star = rescue ? '🛟' : '🌟';
+        const text = rescue ? item.text.replace(/^rescue( move)?:\s*/i, '') : item.text;
+        return `<div class="sos-item${rescue ? ' rescue' : ''}"><span class="sos-star">${star}</span>${escapeHtml(text)}</div>`;
+      })
+      .join('');
+    content.innerHTML = `
+      <h2 class="sos-title">He won't eat anything.</h2>
+      ${bg.note ? `<p class="sos-note">${escapeHtml(bg.note)}</p>` : ''}
+      ${rows}`;
+  }
+  $('#sosModal').hidden = false;
+}
+
+// --- Scratch note ("tell Claude later") ---------------------------------------
+// Pure localStorage. Never touches GitHub, never leaves the phone. The token
+// stays read-only forever; Em empties this at Claude whenever they talk.
+
+function openScratch() {
+  const ta = $('#scratchText');
+  ta.value = LS.get(KEYS.scratch, '');
+  $('#scratchModal').hidden = false;
+  setTimeout(() => ta.focus(), 50);
+}
+
 // --- Shell rendering --------------------------------------------------------
 
 function emptyDataHtml() {
@@ -676,6 +807,23 @@ $('#search').addEventListener('input', (e) => {
 $('#dairyFreeOnly').addEventListener('change', (e) => {
   state.dairyFreeOnly = e.target.checked;
   render();
+});
+
+$('#sosBtn').addEventListener('click', openSos);
+$('#sosClose').addEventListener('click', () => { $('#sosModal').hidden = true; });
+$('#sosModal').addEventListener('click', (e) => {
+  if (e.target.classList.contains('sheet-backdrop')) $('#sosModal').hidden = true;
+});
+
+$('#scratchBtn').addEventListener('click', openScratch);
+$('#scratchText').addEventListener('input', (e) => LS.set(KEYS.scratch, e.target.value));
+$('#scratchClose').addEventListener('click', () => { $('#scratchModal').hidden = true; });
+$('#scratchClear').addEventListener('click', () => {
+  LS.set(KEYS.scratch, '');
+  $('#scratchText').value = '';
+});
+$('#scratchModal').addEventListener('click', (e) => {
+  if (e.target.classList.contains('sheet-backdrop')) $('#scratchModal').hidden = true;
 });
 
 // --- Service worker ----------------------------------------------------------

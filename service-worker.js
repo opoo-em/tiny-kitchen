@@ -6,7 +6,7 @@
 //
 // Bump CACHE_VERSION whenever the app shell changes — clients update on next load.
 
-const CACHE_VERSION = 'tiny-kitchen-v2.0';
+const CACHE_VERSION = 'tiny-kitchen-v3.0';
 const SHELL = [
   './',
   'index.html',

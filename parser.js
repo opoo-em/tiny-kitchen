@@ -87,11 +87,13 @@
   // --- Menu parser ---------------------------------------------------------
   // ## Breakfast | Main | Snacks  → meals
   // ## Boosters                    → global booster pool
+  // ## Break glass                 → the emergency screen (goldens + rescues)
   // anything else (Reference, …)   → ignored
   // ### Base 🍳 [tags]             → base
   //   > boosters: a, b, c          → explicit booster attachments
   //   > any other text             → note on the base (or meal, if before bases)
   //   - riff text [tags]           → riff
+  // Riff/base tags the app understands: [iron] [freezer] [confirmed] [test]
 
   const MEAL_KEYS = {
     breakfast: 'breakfast',
@@ -104,9 +106,11 @@
     const lines = String(md).split('\n');
     const meals = [];
     const boosters = [];
+    let breakglass = null;    // { note, items: [{text, tags}] }
     let meal = null;          // current meal object
     let base = null;          // current base object
     let inBoosters = false;
+    let inBreakglass = false;
     let ignoring = false;
 
     const flushBase = () => { base = null; };
@@ -124,14 +128,23 @@
           meal = { key, name, note: '', bases: [] };
           meals.push(meal);
           inBoosters = false;
+          inBreakglass = false;
           ignoring = false;
         } else if (name.toLowerCase() === 'boosters') {
           meal = null;
           inBoosters = true;
+          inBreakglass = false;
+          ignoring = false;
+        } else if (name.toLowerCase() === 'break glass') {
+          meal = null;
+          inBoosters = false;
+          inBreakglass = true;
+          breakglass = breakglass || { note: '', items: [] };
           ignoring = false;
         } else {
           meal = null;
           inBoosters = false;
+          inBreakglass = false;
           ignoring = true; // Reference etc.
         }
         continue;
@@ -159,6 +172,11 @@
 
       // Blockquote lines: "> boosters: …" attaches; other quotes become notes.
       const quote = line.match(/^>\s*(.*)$/);
+      if (quote && inBreakglass) {
+        const q = quote[1].trim();
+        if (q) breakglass.note = breakglass.note ? breakglass.note + ' ' + q : q;
+        continue;
+      }
       if (quote && !inBoosters) {
         const q = quote[1].trim();
         const bl = q.match(/^boosters:\s*(.+)$/i);
@@ -174,6 +192,11 @@
       const bullet = line.match(/^(?:[-*]|\d+\.)\s+(.+)$/);
       if (!bullet) continue;
       const text = bullet[1].trim();
+
+      if (inBreakglass) {
+        breakglass.items.push({ text: stripTags(text), tags: extractTags(text) });
+        continue;
+      }
 
       if (inBoosters) {
         // "- Name [tags] — pairs: a, b, c (note)"
@@ -222,7 +245,7 @@
       }
     }
 
-    return { meals, boosters };
+    return { meals, boosters, breakglass };
   }
 
   // --- Recipe parser (ingredients.md) --------------------------------------
